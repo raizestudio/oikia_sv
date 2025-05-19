@@ -1,0 +1,10 @@
+[
+  {
+    "code": "fr",
+    "operator": "Afnic",
+    "idn": true,
+    "dnssec": true,
+    "ipv6": true,
+    "country": "FR"
+  }
+]

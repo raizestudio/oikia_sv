@@ -1,0 +1,51 @@
+[
+  {
+    "code": "VILLAGE",
+    "name": "village",
+    "description": "Human settlement or community that is larger than a hamlet but smaller than a town.",
+    "population_min": 0,
+    "population_max": 1000
+  },
+  {
+    "code": "BOURG",
+    "name": "bourg",
+    "description": "Human settlement or community that is larger than a hamlet but smaller than a town.",
+    "population_min": 0,
+    "population_max": 1000
+  },
+  {
+    "code": "PVILLE",
+    "name": "petite ville",
+    "description": "Human settlement or community that is larger than a hamlet but smaller than a town.",
+    "population_min": 0,
+    "population_max": 1000
+  },
+  {
+    "code": "MVILLE",
+    "name": "moyenne ville",
+    "description": "Human settlement or community that is larger than a hamlet but smaller than a town.",
+    "population_min": 0,
+    "population_max": 1000
+  },
+  {
+    "code": "GVILLE",
+    "name": "grande ville",
+    "description": "Human settlement or community that is larger than a hamlet but smaller than a town.",
+    "population_min": 0,
+    "population_max": 1000
+  },
+  {
+    "code": "METROPOLE",
+    "name": "metropole",
+    "description": "Human settlement or community that is larger than a hamlet but smaller than a town.",
+    "population_min": 0,
+    "population_max": 1000
+  },
+  {
+    "code": "MEGALOPOLE",
+    "name": "mégalopole",
+    "description": "Human settlement or community that is larger than a hamlet but smaller than a town.",
+    "population_min": 0,
+    "population_max": 1000
+  }
+]

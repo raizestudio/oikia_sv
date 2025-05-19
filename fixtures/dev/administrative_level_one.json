@@ -1,0 +1,67 @@
+[
+  {
+    "code": "FR-ARA",
+    "name": "Auvergne-Rhône-Alpes",
+    "country": "FR"
+  },
+  {
+    "code": "FR-BFC",
+    "name": "Bourgogne-Franche-Comté",
+    "country": "FR"
+  },
+  {
+    "code": "FR-BRE",
+    "name": "Bretagne",
+    "country": "FR"
+  },
+  {
+    "code": "FR-CVL",
+    "name": "Centre",
+    "country": "FR"
+  },
+  {
+    "code": "FR-GES",
+    "name": "Grand Est",
+    "country": "FR"
+  },
+  {
+    "code": "FR-HDF",
+    "name": "Hauts-de-France",
+    "country": "FR"
+  },
+  {
+    "code": "FR-IDF",
+    "name": "Île-de-France",
+    "country": "FR"
+  },
+  {
+    "code": "FR-NOR",
+    "name": "Normandie",
+    "country": "FR"
+  },
+  {
+    "code": "FR-NAQ",
+    "name": "Nouvelle-Aquitaine",
+    "country": "FR"
+  },
+  {
+    "code": "FR-OCC",
+    "name": "Occitanie",
+    "country": "FR"
+  },
+  {
+    "code": "FR-PDL",
+    "name": "Pays de la Loire",
+    "country": "FR"
+  },
+  {
+    "code": "FR-PAC",
+    "name": "Provence-Alpes-Côte d'Azur",
+    "country": "FR"
+  },
+  {
+    "code": "FR-20R",
+    "name": "Corse",
+    "country": "FR"
+  }
+]

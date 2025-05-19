@@ -1,0 +1,72 @@
+[
+  {
+    "code": "eur",
+    "code_numeric": "978",
+    "name": "Euro",
+    "symbol": "€",
+    "minor_unit": 2
+  },
+  {
+    "code": "usd",
+    "code_numeric": "840",
+    "name": "US Dollar",
+    "symbol": "$",
+    "minor_unit": 2
+  },
+  {
+    "code": "jpy",
+    "code_numeric": "392",
+    "name": "Japanese Yen",
+    "symbol": "¥",
+    "minor_unit": 0
+  },
+  {
+    "code": "gbp",
+    "code_numeric": "826",
+    "name": "British Pound",
+    "symbol": "£",
+    "minor_unit": 2
+  },
+  {
+    "code": "aud",
+    "code_numeric": "036",
+    "name": "Australian Dollar",
+    "symbol": "A$",
+    "minor_unit": 2
+  },
+  {
+    "code": "cad",
+    "code_numeric": "124",
+    "name": "Canadian Dollar",
+    "symbol": "C$",
+    "minor_unit": 2
+  },
+  {
+    "code": "chf",
+    "code_numeric": "756",
+    "name": "Swiss Franc",
+    "symbol": "CHF",
+    "minor_unit": 2
+  },
+  {
+    "code": "cny",
+    "code_numeric": "156",
+    "name": "Chinese Yuan",
+    "symbol": "¥",
+    "minor_unit": 2
+  },
+  {
+    "code": "inr",
+    "code_numeric": "356",
+    "name": "Indian Rupee",
+    "symbol": "₹",
+    "minor_unit": 2
+  },
+  {
+    "code": "brl",
+    "code_numeric": "986",
+    "name": "Brazilian Real",
+    "symbol": "R$",
+    "minor_unit": 2
+  }
+]

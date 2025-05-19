@@ -1,0 +1,11 @@
+[
+  {
+    "code_iso2": "FR",
+    "code_iso3": "FRA",
+    "onu_code": "004",
+    "name": "France",
+    "language_official": "fr",
+    "continent": "EU",
+    "currency": "eur"
+  }
+]

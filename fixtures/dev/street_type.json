@@ -1,0 +1,39 @@
+[
+  {
+    "code": "ALLEE",
+    "name": "Allée"
+  },
+  {
+    "code": "ANSE",
+    "name": "Anse"
+  },
+  {
+    "code": "AVENUE",
+    "name": "Avenue"
+  },
+  {
+    "code": "BOULEVARD",
+    "name": "Boulevard",
+    "short_name": "Bd"
+  },
+  {
+    "code": "CARREFOUR",
+    "name": "Carrefour"
+  },
+  {
+    "code": "CHAUSSEE",
+    "name": "Chaussée"
+  },
+  {
+    "code": "CHEMIN",
+    "name": "Chemin"
+  },
+  {
+    "code": "CITE",
+    "name": "Cité"
+  },
+  {
+    "code": "CLOS",
+    "name": "Clos"
+  }
+]
