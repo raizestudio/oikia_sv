@@ -2,11 +2,14 @@ import logging
 from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordRequestForm
-from tortoise.exceptions import DoesNotExist
+from tortoise.exceptions import DoesNotExist, IntegrityError
+from tortoise.transactions import in_transaction
 
 from models.auth import ApiKey, Refresh, Session, Token, TokenBlacklist
 from models.clients import Client
+from models.geo import Email
 from models.users import User
 from schemas.auth import SessionCreateSchema
 from schemas.users import UserCreate, UserRead
@@ -29,21 +32,40 @@ router = APIRouter()
     },
 )
 async def register_user(user: UserCreate):
-    encrypted_password = hash_password(user.password)
-    _, created = await User.get_or_create(
-        username=user.username,
-        password=encrypted_password,
-        email=user.email,
-        first_name=user.first_name,
-        last_name=user.last_name,
-    )
-    if not created:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="User with this email or username already exists",
+    async with in_transaction():
+        email, created = await Email.get_or_create(email=user.email)
+        if not created:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Email already exists",
+            )
+
+        try:
+            encrypted_password = hash_password(user.password)
+            _ = await User.create(
+                username=user.username,
+                password=encrypted_password,
+                email=email,
+                first_name=user.first_name,
+                last_name=user.last_name,
+            )
+        except IntegrityError:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Username already exists",
+            )
+
+        return JSONResponse(
+            content={
+                "detail": "User created successfully",
+                "user": UserRead.model_dump_json(user),
+            }
         )
 
-    return {"message": "User created successfully", "user": created}
+    raise HTTPException(
+        status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+        detail="User could not be created",
+    )
 
 
 @router.post("/authenticate", responses={status.HTTP_200_OK: {"description": "Successful connection"}, status.HTTP_401_UNAUTHORIZED: {"description": "Unauthorized"}})

@@ -3,6 +3,7 @@ from pathlib import Path
 
 import typer
 from tortoise import Tortoise, run_async
+from tortoise.exceptions import IntegrityError
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 
@@ -17,7 +18,7 @@ settings = Settings()
 
 
 @app.command()
-def createuser(username: str, password: str, email: str, first_name: str, last_name: str, role: str):
+def createuser(username: str, password: str, email: str, first_name: str, last_name: str, is_admin: bool = False, is_superuser: bool = False):
     """Create user"""
 
     async def _create_user():
@@ -33,15 +34,21 @@ def createuser(username: str, password: str, email: str, first_name: str, last_n
             },
         )
         password_hash = hash_password(password)
-        _email = await Email.create(email=email)
-        _user = await User.create(
-            username=username,
-            password=password_hash,
-            email=_email,
-            first_name=first_name,
-            last_name=last_name,
-        )
-        typer.echo(_user)
+        try:    
+            _email = await Email.create(email=email)
+            _user = await User.create(
+                username=username,
+                password=password_hash,
+                email=_email,
+                first_name=first_name,
+                last_name=last_name,
+                is_admin=is_admin,
+                is_superuser=is_superuser,
+            )
+            typer.echo(_user)
+
+        except IntegrityError:
+            typer.echo(f"User {username} already exists.")
 
         await Tortoise.close_connections()
 

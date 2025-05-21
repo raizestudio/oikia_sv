@@ -29,8 +29,8 @@ class Settings(BaseSettings):
     cache_db: int = 0
     cache_ttl: int = 60
     # RABBITMQ
-    rabbitmq_user: str = "heracles"
-    rabbitmq_password: str = "heracles"
+    rabbitmq_user: str = "admin"
+    rabbitmq_password: str = "admin"
     rabbitmq_host: str = "localhost"
     rabbitmq_port: int = 5672
     # COMMON
@@ -43,6 +43,7 @@ class Settings(BaseSettings):
         "clients",
         "geo",
         "assets",
+        "intents",
     ]
 
     required_dirs: List[str] = [
@@ -54,3 +55,7 @@ class Settings(BaseSettings):
 
     class Config:
         env_file = ".env"
+
+    @property
+    def celery_broker_url(self) -> str:
+        return f"amqp://{self.rabbitmq_user}:{self.rabbitmq_password}" f"@{self.rabbitmq_host}:{self.rabbitmq_port}//"

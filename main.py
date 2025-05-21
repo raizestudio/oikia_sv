@@ -14,7 +14,7 @@ from pythonjsonlogger import jsonlogger
 
 import signals  # noqa
 from config import Settings
-from routers import core, users
+from routers import auth, core, geo, intents, users
 from utils.db import Database
 
 settings = Settings()
@@ -52,6 +52,9 @@ app = FastAPI(title=settings.app_name, version=settings.app_version, lifespan=li
 
 app.include_router(core.router, tags=["Core"])
 app.include_router(users.router, prefix="/users", tags=["Users"])
+app.include_router(auth.router, prefix="/auth", tags=["Auth"])
+app.include_router(geo.router, prefix="/geo", tags=["Geo"])
+app.include_router(intents.router, prefix="/intents", tags=["Intents"])
 
 app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 

@@ -48,7 +48,7 @@ class User(Model):
     last_name = fields.CharField(max_length=50)
     is_active = fields.BooleanField(default=True)
     avatar = fields.CharField(max_length=255, null=True)
-    role = fields.CharEnumField(RoleEnum, default=RoleEnum.PATRON)
+    # role = fields.CharEnumField(RoleEnum, default=RoleEnum.PATRON)
     created_at = fields.DatetimeField(auto_now_add=True)
     updated_at = fields.DatetimeField(auto_now=True)
 
@@ -58,6 +58,9 @@ class User(Model):
     # service_requests = fields.ManyToManyField("models.ServiceRequest", related_name="user_service_requests")
     permissions = fields.ManyToManyField("models.Permission", related_name="user_permissions")
 
+    is_admin = fields.BooleanField(default=False)
+    is_superuser = fields.BooleanField(default=False)
+    
     all_objects = UserManager()
 
     class Meta:

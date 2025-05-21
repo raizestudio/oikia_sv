@@ -1,9 +1,10 @@
 import logging
 from typing import Annotated
 
-from config import Settings
 from fastapi import APIRouter, Depends, Request, Response, Security
 from fastapi.responses import JSONResponse
+
+from config import Settings
 from models.clients import Client
 from models.users import User
 from utils.security import get_current_user_or_client
@@ -12,6 +13,14 @@ settings = Settings()
 router = APIRouter()
 
 logger = logging.getLogger("uvicorn")
+
+
+@router.get("/")
+async def root():
+    """
+    Root endpoint.
+    """
+    return JSONResponse(content={"message": "Should i call you mistah?"})
 
 
 @router.get("/health")

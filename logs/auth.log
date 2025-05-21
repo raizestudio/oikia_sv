@@ -1,0 +1,1 @@
+{"asctime": "2025-05-20 17:04:31,881", "levelname": "WARNING", "name": "auth", "message": "Authentication attempt with missing user", "user_email": "root", "password": "root"}
