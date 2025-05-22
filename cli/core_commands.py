@@ -1,8 +1,12 @@
+import asyncio
 import sys
 from pathlib import Path
+from urllib.parse import urljoin
 
 import pandas as pd
+import requests
 import typer
+from bs4 import BeautifulSoup
 from cli_utils import load_cities, load_fixture, load_street_types, load_streets
 from rich import print as r_print
 from rich.console import Console
@@ -218,6 +222,54 @@ def generateallpermissions():
         await Tortoise.close_connections()
 
     run_async(_generate_all_permissions())
+
+
+@app.command()
+def fetchdatasets():
+    """Fetch datasets from the web and store them in proper directories."""
+
+    async def _fetch_datasets():
+        # TODO: Just very basic implementation, need to be improved ( e.g. handle multiple sources )
+        console.print("[bold cyan]Fetching datasets...[/bold cyan]")
+        base_url = "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv"
+        try:
+            response = requests.get(base_url)
+            response.raise_for_status()
+        except requests.RequestException as e:
+            console.print(f"[bold red]Error fetching datasets:[/bold red] {e}")
+            return
+
+        soup = BeautifulSoup(response.text, "html.parser")
+        links = []
+
+        for a_tag in soup.find_all("a"):
+            href = a_tag.get("href")
+            if href and href.endswith(".csv.gz"):
+                abs_url = urljoin(base_url, href)
+                links.append(abs_url)
+
+        if not links:
+            console.print("[bold red]No CSV files found.[/bold red]")
+            return
+
+        for link in links:
+            filename = link.split("/")[-1]
+            filepath = Path(settings.csv_path) / "france" / "addresses" / filename
+            filepath.parent.mkdir(parents=True, exist_ok=True)
+            if not filepath.exists():
+                try:
+                    r = requests.get(link, stream=True)
+                    r.raise_for_status()
+                    with open(filepath, "wb") as f:
+                        for chunk in r.iter_content(chunk_size=8192):
+                            f.write(chunk)
+                    console.print(f"[green]Downloaded:[/green] {filename}")
+                except requests.RequestException as e:
+                    console.print(f"[bold red]Error downloading {filename}:[/bold red] {e}")
+            else:
+                console.print(f"[yellow]File already exists:[/yellow] {filename}")
+
+    asyncio.run(_fetch_datasets())
 
 
 @app.command()
