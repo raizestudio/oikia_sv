@@ -1,67 +1,110 @@
 [
   {
-    "code": "FR-ARA",
+    "code": "fr-ara",
     "name": "Auvergne-Rhône-Alpes",
+    "code_insee": "84",
     "country": "FR"
   },
   {
-    "code": "FR-BFC",
+    "code": "fr-bfc",
     "name": "Bourgogne-Franche-Comté",
+    "code_insee": "27",
     "country": "FR"
   },
   {
-    "code": "FR-BRE",
+    "code": "fr-bre",
     "name": "Bretagne",
+    "code_insee": "53",
     "country": "FR"
   },
   {
-    "code": "FR-CVL",
+    "code": "fr-cvl",
     "name": "Centre",
+    "code_insee": "24",
     "country": "FR"
   },
   {
-    "code": "FR-GES",
+    "code": "fr-ges",
     "name": "Grand Est",
+    "code_insee": "44",
     "country": "FR"
   },
   {
-    "code": "FR-HDF",
+    "code": "fr-hdf",
     "name": "Hauts-de-France",
+    "code_insee": "32",
     "country": "FR"
   },
   {
-    "code": "FR-IDF",
+    "code": "fr-idf",
     "name": "Île-de-France",
+    "code_insee": "11",
     "country": "FR"
   },
   {
-    "code": "FR-NOR",
+    "code": "fr-nor",
     "name": "Normandie",
+    "code_insee": "28",
     "country": "FR"
   },
   {
-    "code": "FR-NAQ",
+    "code": "fr-naq",
     "name": "Nouvelle-Aquitaine",
+    "code_insee": "75",
     "country": "FR"
   },
   {
-    "code": "FR-OCC",
+    "code": "fr-occ",
     "name": "Occitanie",
+    "code_insee": "76",
     "country": "FR"
   },
   {
-    "code": "FR-PDL",
+    "code": "fr-pdl",
     "name": "Pays de la Loire",
+    "code_insee": "52",
     "country": "FR"
   },
   {
-    "code": "FR-PAC",
+    "code": "fr-pac",
     "name": "Provence-Alpes-Côte d'Azur",
+    "code_insee": "93",
     "country": "FR"
   },
   {
-    "code": "FR-20R",
+    "code": "fr-20r",
     "name": "Corse",
+    "code_insee": "94",
+    "country": "FR"
+  },
+  {
+    "code": "fr-971",
+    "name": "Guadeloupe",
+    "code_insee": "1",
+    "country": "FR"
+  },
+  {
+    "code": "fr-972",
+    "name": "Martinique",
+    "code_insee": "2",
+    "country": "FR"
+  },
+  {
+    "code": "fr-973",
+    "name": "Guyane",
+    "code_insee": "3",
+    "country": "FR"
+  },
+  {
+    "code": "fr-974",
+    "name": "La Réunion",
+    "code_insee": "4",
+    "country": "FR"
+  },
+  {
+    "code": "fr-976",
+    "name": "Mayotte",
+    "code_insee": "6",
     "country": "FR"
   }
 ]

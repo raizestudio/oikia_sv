@@ -28,3 +28,7 @@ install:
 # Install dev
 install-dev:
 	python cli/cli.py core loadallfixtures dev
+
+# Reset database
+reset-db:
+	python cli/cli.py core resetdb

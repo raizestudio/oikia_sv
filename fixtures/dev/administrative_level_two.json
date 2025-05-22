@@ -1,472 +1,472 @@
 [
   {
-    "code": "FR-01",
+    "code": "fr-01",
     "name": "Ain",
-    "administrative_level_one": "FR-ARA"
+    "administrative_level_one": "fr-ara"
   },
   {
-    "code": "FR-02",
+    "code": "fr-02",
     "name": "Aisne",
-    "administrative_level_one": "FR-HDF"
+    "administrative_level_one": "fr-hdf"
   },
   {
-    "code": "FR-03",
+    "code": "fr-03",
     "name": "Allier",
-    "administrative_level_one": "FR-ARA"
+    "administrative_level_one": "fr-ara"
   },
   {
-    "code": "FR-04",
+    "code": "fr-04",
     "name": "Alpes-de-Haute-Provence",
-    "administrative_level_one": "FR-PAC"
+    "administrative_level_one": "fr-pac"
   },
   {
-    "code": "FR-05",
+    "code": "fr-05",
     "name": "Hautes-Alpes",
-    "administrative_level_one": "FR-PAC"
+    "administrative_level_one": "fr-pac"
   },
   {
-    "code": "FR-06",
+    "code": "fr-06",
     "name": "Alpes-Maritimes",
-    "administrative_level_one": "FR-PAC"
+    "administrative_level_one": "fr-pac"
   },
   {
-    "code": "FR-07",
+    "code": "fr-07",
     "name": "Ardèche",
-    "administrative_level_one": "FR-ARA"
+    "administrative_level_one": "fr-ara"
   },
   {
-    "code": "FR-08",
+    "code": "fr-08",
     "name": "Ardennes",
-    "administrative_level_one": "FR-GES"
+    "administrative_level_one": "fr-ges"
   },
   {
-    "code": "FR-09",
+    "code": "fr-09",
     "name": "Ariège",
-    "administrative_level_one": "FR-OCC"
+    "administrative_level_one": "fr-occ"
   },
   {
-    "code": "FR-10",
+    "code": "fr-10",
     "name": "Aube",
-    "administrative_level_one": "FR-GES"
+    "administrative_level_one": "fr-ges"
   },
   {
-    "code": "FR-11",
+    "code": "fr-11",
     "name": "Aude",
-    "administrative_level_one": "FR-OCC"
+    "administrative_level_one": "fr-occ"
   },
   {
-    "code": "FR-12",
+    "code": "fr-12",
     "name": "Aveyron",
-    "administrative_level_one": "FR-OCC"
+    "administrative_level_one": "fr-occ"
   },
   {
-    "code": "FR-13",
+    "code": "fr-13",
     "name": "Bouches-du-Rhône",
-    "administrative_level_one": "FR-PAC"
+    "administrative_level_one": "fr-pac"
   },
   {
-    "code": "FR-14",
+    "code": "fr-14",
     "name": "Calvados",
-    "administrative_level_one": "FR-NOR"
+    "administrative_level_one": "fr-nor"
   },
   {
-    "code": "FR-15",
+    "code": "fr-15",
     "name": "Cantal",
-    "administrative_level_one": "FR-ARA"
+    "administrative_level_one": "fr-ara"
   },
   {
-    "code": "FR-16",
+    "code": "fr-16",
     "name": "Charente",
-    "administrative_level_one": "FR-NAQ"
+    "administrative_level_one": "fr-naq"
   },
   {
-    "code": "FR-17",
+    "code": "fr-17",
     "name": "Charente-Maritime",
-    "administrative_level_one": "FR-NAQ"
+    "administrative_level_one": "fr-naq"
   },
   {
-    "code": "FR-18",
+    "code": "fr-18",
     "name": "Cher",
-    "administrative_level_one": "FR-CVL"
+    "administrative_level_one": "fr-cvl"
   },
   {
-    "code": "FR-19",
+    "code": "fr-19",
     "name": "Corrèze",
-    "administrative_level_one": "FR-NAQ"
+    "administrative_level_one": "fr-naq"
   },
   {
-    "code": "FR-21",
+    "code": "fr-21",
     "name": "Côte-d'Or",
-    "administrative_level_one": "FR-BFC"
+    "administrative_level_one": "fr-bfc"
   },
   {
-    "code": "FR-22",
+    "code": "fr-22",
     "name": "Côtes-d'Armor",
-    "administrative_level_one": "FR-BRE"
+    "administrative_level_one": "fr-bre"
   },
   {
-    "code": "FR-23",
+    "code": "fr-23",
     "name": "Creuse",
-    "administrative_level_one": "FR-NAQ"
+    "administrative_level_one": "fr-naq"
   },
   {
-    "code": "FR-24",
+    "code": "fr-24",
     "name": "Dordogne",
-    "administrative_level_one": "FR-NAQ"
+    "administrative_level_one": "fr-naq"
   },
   {
-    "code": "FR-25",
+    "code": "fr-25",
     "name": "Doubs",
-    "administrative_level_one": "FR-BFC"
+    "administrative_level_one": "fr-bfc"
   },
   {
-    "code": "FR-26",
+    "code": "fr-26",
     "name": "Drôme",
-    "administrative_level_one": "FR-ARA"
+    "administrative_level_one": "fr-ara"
   },
   {
-    "code": "FR-27",
+    "code": "fr-27",
     "name": "Eure",
-    "administrative_level_one": "FR-NOR"
+    "administrative_level_one": "fr-nor"
   },
   {
-    "code": "FR-28",
+    "code": "fr-28",
     "name": "Eure-et-Loir",
-    "administrative_level_one": "FR-CVL"
+    "administrative_level_one": "fr-cvl"
   },
   {
-    "code": "FR-29",
+    "code": "fr-29",
     "name": "Finistère",
-    "administrative_level_one": "FR-BRE"
+    "administrative_level_one": "fr-bre"
   },
   {
-    "code": "FR-30",
+    "code": "fr-30",
     "name": "Gard",
-    "administrative_level_one": "FR-OCC"
+    "administrative_level_one": "fr-occ"
   },
   {
-    "code": "FR-31",
+    "code": "fr-31",
     "name": "Haute-Garonne",
-    "administrative_level_one": "FR-OCC"
+    "administrative_level_one": "fr-occ"
   },
   {
-    "code": "FR-32",
+    "code": "fr-32",
     "name": "Gers",
-    "administrative_level_one": "FR-OCC"
+    "administrative_level_one": "fr-occ"
   },
   {
-    "code": "FR-33",
+    "code": "fr-33",
     "name": "Gironde",
-    "administrative_level_one": "FR-NAQ"
+    "administrative_level_one": "fr-naq"
   },
   {
-    "code": "FR-34",
+    "code": "fr-34",
     "name": "Hérault",
-    "administrative_level_one": "FR-OCC"
+    "administrative_level_one": "fr-occ"
   },
   {
-    "code": "FR-35",
+    "code": "fr-35",
     "name": "Ille-et-Vilaine",
-    "administrative_level_one": "FR-BRE"
+    "administrative_level_one": "fr-bre"
   },
   {
-    "code": "FR-36",
+    "code": "fr-36",
     "name": "Indre",
-    "administrative_level_one": "FR-CVL"
+    "administrative_level_one": "fr-cvl"
   },
   {
-    "code": "FR-37",
+    "code": "fr-37",
     "name": "Indre-et-Loire",
-    "administrative_level_one": "FR-CVL"
+    "administrative_level_one": "fr-cvl"
   },
   {
-    "code": "FR-38",
+    "code": "fr-38",
     "name": "Isère",
-    "administrative_level_one": "FR-ARA"
+    "administrative_level_one": "fr-ara"
   },
   {
-    "code": "FR-39",
+    "code": "fr-39",
     "name": "Jura",
-    "administrative_level_one": "FR-BFC"
+    "administrative_level_one": "fr-bfc"
   },
   {
-    "code": "FR-40",
+    "code": "fr-40",
     "name": "Landes",
-    "administrative_level_one": "FR-NAQ"
+    "administrative_level_one": "fr-naq"
   },
   {
-    "code": "FR-41",
+    "code": "fr-41",
     "name": "Loir-et-Cher",
-    "administrative_level_one": "FR-CVL"
+    "administrative_level_one": "fr-cvl"
   },
   {
-    "code": "FR-42",
+    "code": "fr-42",
     "name": "Loire",
-    "administrative_level_one": "FR-ARA"
+    "administrative_level_one": "fr-ara"
   },
   {
-    "code": "FR-43",
+    "code": "fr-43",
     "name": "Haute-Loire",
-    "administrative_level_one": "FR-ARA"
+    "administrative_level_one": "fr-ara"
   },
   {
-    "code": "FR-44",
+    "code": "fr-44",
     "name": "Loire-Atlantique",
-    "administrative_level_one": "FR-PDL"
+    "administrative_level_one": "fr-pdl"
   },
   {
-    "code": "FR-45",
+    "code": "fr-45",
     "name": "Loiret",
-    "administrative_level_one": "FR-CVL"
+    "administrative_level_one": "fr-cvl"
   },
   {
-    "code": "FR-46",
+    "code": "fr-46",
     "name": "Lot",
-    "administrative_level_one": "FR-OCC"
+    "administrative_level_one": "fr-occ"
   },
   {
-    "code": "FR-47",
+    "code": "fr-47",
     "name": "Lot-et-Garonne",
-    "administrative_level_one": "FR-NAQ"
+    "administrative_level_one": "fr-naq"
   },
   {
-    "code": "FR-48",
+    "code": "fr-48",
     "name": "Lozère",
-    "administrative_level_one": "FR-OCC"
+    "administrative_level_one": "fr-occ"
   },
   {
-    "code": "FR-49",
+    "code": "fr-49",
     "name": "Maine-et-Loire",
-    "administrative_level_one": "FR-PDL"
+    "administrative_level_one": "fr-pdl"
   },
   {
-    "code": "FR-50",
+    "code": "fr-50",
     "name": "Manche",
-    "administrative_level_one": "FR-NOR"
+    "administrative_level_one": "fr-nor"
   },
   {
-    "code": "FR-51",
+    "code": "fr-51",
     "name": "Marne",
-    "administrative_level_one": "FR-GES"
+    "administrative_level_one": "fr-ges"
   },
   {
-    "code": "FR-52",
+    "code": "fr-52",
     "name": "Haute-Marne",
-    "administrative_level_one": "FR-GES"
+    "administrative_level_one": "fr-ges"
   },
   {
-    "code": "FR-53",
+    "code": "fr-53",
     "name": "Mayenne",
-    "administrative_level_one": "FR-PDL"
+    "administrative_level_one": "fr-pdl"
   },
   {
-    "code": "FR-54",
+    "code": "fr-54",
     "name": "Meurthe-et-Moselle",
-    "administrative_level_one": "FR-GES"
+    "administrative_level_one": "fr-ges"
   },
   {
-    "code": "FR-55",
+    "code": "fr-55",
     "name": "Meuse",
-    "administrative_level_one": "FR-GES"
+    "administrative_level_one": "fr-ges"
   },
   {
-    "code": "FR-56",
+    "code": "fr-56",
     "name": "Morbihan",
-    "administrative_level_one": "FR-BRE"
+    "administrative_level_one": "fr-bre"
   },
   {
-    "code": "FR-57",
+    "code": "fr-57",
     "name": "Moselle",
-    "administrative_level_one": "FR-GES"
+    "administrative_level_one": "fr-ges"
   },
   {
-    "code": "FR-58",
+    "code": "fr-58",
     "name": "Nièvre",
-    "administrative_level_one": "FR-BFC"
+    "administrative_level_one": "fr-bfc"
   },
   {
-    "code": "FR-59",
+    "code": "fr-59",
     "name": "Nord",
-    "administrative_level_one": "FR-HDF"
+    "administrative_level_one": "fr-hdf"
   },
   {
-    "code": "FR-60",
+    "code": "fr-60",
     "name": "Oise",
-    "administrative_level_one": "FR-HDF"
+    "administrative_level_one": "fr-hdf"
   },
   {
-    "code": "FR-61",
+    "code": "fr-61",
     "name": "Orne",
-    "administrative_level_one": "FR-NOR"
+    "administrative_level_one": "fr-nor"
   },
   {
-    "code": "FR-62",
+    "code": "fr-62",
     "name": "Pas-de-Calais",
-    "administrative_level_one": "FR-HDF"
+    "administrative_level_one": "fr-hdf"
   },
   {
-    "code": "FR-63",
+    "code": "fr-63",
     "name": "Puy-de-Dôme",
-    "administrative_level_one": "FR-ARA"
+    "administrative_level_one": "fr-ara"
   },
   {
-    "code": "FR-64",
+    "code": "fr-64",
     "name": "Pyrénées-Atlantiques",
-    "administrative_level_one": "FR-NAQ"
+    "administrative_level_one": "fr-naq"
   },
   {
-    "code": "FR-65",
+    "code": "fr-65",
     "name": "Hautes-Pyrénées",
-    "administrative_level_one": "FR-OCC"
+    "administrative_level_one": "fr-occ"
   },
   {
-    "code": "FR-66",
+    "code": "fr-66",
     "name": "Pyrénées-Orientales",
-    "administrative_level_one": "FR-OCC"
+    "administrative_level_one": "fr-occ"
   },
   {
-    "code": "FR-67",
+    "code": "fr-67",
     "name": "Bas-Rhin",
-    "administrative_level_one": "FR-GES"
+    "administrative_level_one": "fr-ges"
   },
   {
-    "code": "FR-68",
+    "code": "fr-68",
     "name": "Haut-Rhin",
-    "administrative_level_one": "FR-GES"
+    "administrative_level_one": "fr-ges"
   },
   {
-    "code": "FR-69",
+    "code": "fr-69",
     "name": "Rhône",
-    "administrative_level_one": "FR-ARA"
+    "administrative_level_one": "fr-ara"
   },
   {
-    "code": "FR-70",
+    "code": "fr-70",
     "name": "Haute-Saône",
-    "administrative_level_one": "FR-BFC"
+    "administrative_level_one": "fr-bfc"
   },
   {
-    "code": "FR-71",
+    "code": "fr-71",
     "name": "Saône-et-Loire",
-    "administrative_level_one": "FR-BFC"
+    "administrative_level_one": "fr-bfc"
   },
   {
-    "code": "FR-72",
+    "code": "fr-72",
     "name": "Sarthe",
-    "administrative_level_one": "FR-PDL"
+    "administrative_level_one": "fr-pdl"
   },
   {
-    "code": "FR-73",
+    "code": "fr-73",
     "name": "Savoie",
-    "administrative_level_one": "FR-ARA"
+    "administrative_level_one": "fr-ara"
   },
   {
-    "code": "FR-74",
+    "code": "fr-74",
     "name": "Haute-Savoie",
-    "administrative_level_one": "FR-ARA"
+    "administrative_level_one": "fr-ara"
   },
   {
-    "code": "FR-75",
+    "code": "fr-75",
     "name": "Paris",
-    "administrative_level_one": "FR-IDF"
+    "administrative_level_one": "fr-idf"
   },
   {
-    "code": "FR-76",
+    "code": "fr-76",
     "name": "Seine-Maritime",
-    "administrative_level_one": "FR-NOR"
+    "administrative_level_one": "fr-nor"
   },
   {
-    "code": "FR-77",
+    "code": "fr-77",
     "name": "Seine-et-Marne",
-    "administrative_level_one": "FR-IDF"
+    "administrative_level_one": "fr-idf"
   },
   {
-    "code": "FR-78",
+    "code": "fr-78",
     "name": "Yvelines",
-    "administrative_level_one": "FR-IDF"
+    "administrative_level_one": "fr-idf"
   },
   {
-    "code": "FR-79",
+    "code": "fr-79",
     "name": "Deux-Sèvres",
-    "administrative_level_one": "FR-NAQ"
+    "administrative_level_one": "fr-naq"
   },
   {
-    "code": "FR-80",
+    "code": "fr-80",
     "name": "Somme",
-    "administrative_level_one": "FR-HDF"
+    "administrative_level_one": "fr-hdf"
   },
   {
-    "code": "FR-81",
+    "code": "fr-81",
     "name": "Tarn",
-    "administrative_level_one": "FR-OCC"
+    "administrative_level_one": "fr-occ"
   },
   {
-    "code": "FR-82",
+    "code": "fr-82",
     "name": "Tarn-et-Garonne",
-    "administrative_level_one": "FR-OCC"
+    "administrative_level_one": "fr-occ"
   },
   {
-    "code": "FR-83",
+    "code": "fr-83",
     "name": "Var",
-    "administrative_level_one": "FR-PAC"
+    "administrative_level_one": "fr-pac"
   },
   {
-    "code": "FR-84",
+    "code": "fr-84",
     "name": "Vaucluse",
-    "administrative_level_one": "FR-PAC"
+    "administrative_level_one": "fr-pac"
   },
   {
-    "code": "FR-85",
+    "code": "fr-85",
     "name": "Vendée",
-    "administrative_level_one": "FR-PDL"
+    "administrative_level_one": "fr-pdl"
   },
   {
-    "code": "FR-86",
+    "code": "fr-86",
     "name": "Vienne",
-    "administrative_level_one": "FR-NAQ"
+    "administrative_level_one": "fr-naq"
   },
   {
-    "code": "FR-87",
+    "code": "fr-87",
     "name": "Haute-Vienne",
-    "administrative_level_one": "FR-NAQ"
+    "administrative_level_one": "fr-naq"
   },
   {
-    "code": "FR-88",
+    "code": "fr-88",
     "name": "Vosges",
-    "administrative_level_one": "FR-GES"
+    "administrative_level_one": "fr-ges"
   },
   {
-    "code": "FR-89",
+    "code": "fr-89",
     "name": "Yonne",
-    "administrative_level_one": "FR-BFC"
+    "administrative_level_one": "fr-bfc"
   },
   {
-    "code": "FR-90",
+    "code": "fr-90",
     "name": "Territoire de Belfort",
-    "administrative_level_one": "FR-BFC"
+    "administrative_level_one": "fr-bfc"
   },
   {
-    "code": "FR-91",
+    "code": "fr-91",
     "name": "Essonne",
-    "administrative_level_one": "FR-IDF"
+    "administrative_level_one": "fr-idf"
   },
   {
-    "code": "FR-92",
+    "code": "fr-92",
     "name": "Hauts-de-Seine",
-    "administrative_level_one": "FR-IDF"
+    "administrative_level_one": "fr-idf"
   },
   {
-    "code": "FR-93",
+    "code": "fr-93",
     "name": "Seine-Saint-Denis",
-    "administrative_level_one": "FR-IDF"
+    "administrative_level_one": "fr-idf"
   },
   {
-    "code": "FR-94",
+    "code": "fr-94",
     "name": "Val-de-Marne",
-    "administrative_level_one": "FR-IDF"
+    "administrative_level_one": "fr-idf"
   },
   {
-    "code": "FR-95",
+    "code": "fr-95",
     "name": "Val-d'Oise",
-    "administrative_level_one": "FR-IDF"
+    "administrative_level_one": "fr-idf"
   }
 ]

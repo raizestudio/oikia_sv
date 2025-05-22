@@ -1412,3 +1412,1120 @@
 {"asctime": "2025-05-21 11:32:47,702", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [56466]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
 {"asctime": "2025-05-21 11:32:47,702", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
 {"asctime": "2025-05-21 11:32:47,747", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 11:47:51,204", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 11:47:51,305", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 11:47:51,305", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 11:47:51,305", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [56466]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 11:47:51,820", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [60417]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 11:47:51,820", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 11:47:51,862", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 11:47:55,573", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 11:47:55,674", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 11:47:55,675", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 11:47:55,675", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [60417]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 11:47:56,175", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [60479]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 11:47:56,175", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 11:47:56,215", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 11:47:57,921", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 11:47:58,022", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 11:47:58,023", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 11:47:58,023", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [60479]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 11:47:58,520", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [60518]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 11:47:58,520", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 11:47:58,559", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 11:48:01,971", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 11:48:02,072", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 11:48:02,073", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 11:48:02,073", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [60518]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 11:48:02,616", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [60563]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 11:48:02,616", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 11:48:02,653", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 11:51:50,986", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 11:51:51,086", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 11:51:51,087", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 11:51:51,088", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [60563]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 11:51:51,558", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [61461]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 11:51:51,558", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 11:51:51,598", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 11:51:52,099", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 11:51:52,200", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 11:51:52,202", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 11:51:52,202", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [61461]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 11:51:52,744", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [61517]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 11:51:52,744", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 11:51:52,785", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 15:46:38,979", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 15:46:39,087", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 15:46:39,092", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 15:46:39,092", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [61517]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 15:51:17,339", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [9657]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 15:51:17,339", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 15:51:17,359", "levelname": "ERROR", "name": "uvicorn.error", "message": "Traceback (most recent call last):\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/starlette/routing.py\", line 692, in lifespan\n    async with self.lifespan_context(app) as maybe_state:\n               ~~~~~~~~~~~~~~~~~~~~~^^^^^\n  File \"/usr/lib/python3.13/contextlib.py\", line 214, in __aenter__\n    return await anext(self.gen)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/fastapi/routing.py\", line 133, in merged_lifespan\n    async with original_context(app) as maybe_original_state:\n               ~~~~~~~~~~~~~~~~^^^^^\n  File \"/usr/lib/python3.13/contextlib.py\", line 214, in __aenter__\n    return await anext(self.gen)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/contrib/fastapi/__init__.py\", line 271, in orm_lifespan\n    async with RegisterTortoise(\n               ~~~~~~~~~~~~~~~~^\n        app_instance,\n        ^^^^^^^^^^^^^\n    ...<4 lines>...\n        generate_schemas,\n        ^^^^^^^^^^^^^^^^^\n    ):\n    ^\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/contrib/fastapi/__init__.py\", line 177, in __aenter__\n    await self.init_orm()\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/contrib/fastapi/__init__.py\", line 166, in init_orm\n    await Tortoise.generate_schemas()\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/__init__.py\", line 594, in generate_schemas\n    await generate_schema_for_client(connection, safe)\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/utils.py\", line 43, in generate_schema_for_client\n    schema = get_schema_sql(client, safe)\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/utils.py\", line 32, in get_schema_sql\n    return generator.get_create_schema_sql(safe)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/backends/base/schema_generator.py\", line 477, in get_create_schema_sql\n    tables_to_create.append(self._get_table_sql(model, safe))\n                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/backends/base/schema_generator.py\", line 401, in _get_table_sql\n    default = self._get_field_default(field_object, table_name, column_name, model)\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/backends/base/schema_generator.py\", line 383, in _get_field_default\n    self._escape_default_value(default),\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/backends/base_postgres/schema_generator.py\", line 71, in _escape_default_value\n    return encoders.get(type(default))(default)  # type: ignore\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^\nTypeError: 'NoneType' object is not callable\n"}
+{"asctime": "2025-05-21 15:51:17,360", "levelname": "ERROR", "name": "uvicorn.error", "message": "Application startup failed. Exiting."}
+{"asctime": "2025-05-21 15:52:15,215", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [10075]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 15:52:15,215", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 15:52:15,228", "levelname": "ERROR", "name": "uvicorn.error", "message": "Traceback (most recent call last):\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/starlette/routing.py\", line 692, in lifespan\n    async with self.lifespan_context(app) as maybe_state:\n               ~~~~~~~~~~~~~~~~~~~~~^^^^^\n  File \"/usr/lib/python3.13/contextlib.py\", line 214, in __aenter__\n    return await anext(self.gen)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/fastapi/routing.py\", line 133, in merged_lifespan\n    async with original_context(app) as maybe_original_state:\n               ~~~~~~~~~~~~~~~~^^^^^\n  File \"/usr/lib/python3.13/contextlib.py\", line 214, in __aenter__\n    return await anext(self.gen)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/contrib/fastapi/__init__.py\", line 271, in orm_lifespan\n    async with RegisterTortoise(\n               ~~~~~~~~~~~~~~~~^\n        app_instance,\n        ^^^^^^^^^^^^^\n    ...<4 lines>...\n        generate_schemas,\n        ^^^^^^^^^^^^^^^^^\n    ):\n    ^\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/contrib/fastapi/__init__.py\", line 177, in __aenter__\n    await self.init_orm()\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/contrib/fastapi/__init__.py\", line 166, in init_orm\n    await Tortoise.generate_schemas()\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/__init__.py\", line 594, in generate_schemas\n    await generate_schema_for_client(connection, safe)\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/utils.py\", line 43, in generate_schema_for_client\n    schema = get_schema_sql(client, safe)\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/utils.py\", line 32, in get_schema_sql\n    return generator.get_create_schema_sql(safe)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/backends/base/schema_generator.py\", line 477, in get_create_schema_sql\n    tables_to_create.append(self._get_table_sql(model, safe))\n                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/backends/base/schema_generator.py\", line 401, in _get_table_sql\n    default = self._get_field_default(field_object, table_name, column_name, model)\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/backends/base/schema_generator.py\", line 383, in _get_field_default\n    self._escape_default_value(default),\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/home/yoshe/GitHub/oikia/back/venv/lib/python3.13/site-packages/tortoise/backends/base_postgres/schema_generator.py\", line 71, in _escape_default_value\n    return encoders.get(type(default))(default)  # type: ignore\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^\nTypeError: 'NoneType' object is not callable\n"}
+{"asctime": "2025-05-21 15:52:15,228", "levelname": "ERROR", "name": "uvicorn.error", "message": "Application startup failed. Exiting."}
+{"asctime": "2025-05-21 15:52:41,701", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [10357]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 15:52:41,702", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 15:52:41,763", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 15:53:05,321", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 15:53:05,422", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 15:53:05,423", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 15:53:05,423", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [10357]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 15:53:06,003", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [10681]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 15:53:06,004", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 15:53:06,043", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 15:53:52,459", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 15:53:52,560", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 15:53:52,561", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 15:53:52,561", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [10681]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 15:53:53,143", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [11008]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 15:53:53,143", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 15:53:53,193", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:21:08,402", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:21:08,503", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:21:08,504", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:21:08,504", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [11008]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:21:09,007", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [31910]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:21:09,008", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:21:09,047", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:21:11,756", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:21:11,857", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:21:11,858", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:21:11,858", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [31910]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:21:12,352", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [31965]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:21:12,352", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:21:12,394", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:21:29,277", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:21:29,378", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:21:29,382", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:21:29,383", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [31965]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:21:29,880", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [32056]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:21:29,881", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:21:29,921", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:21:33,840", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:21:33,941", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:21:33,942", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:21:33,942", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [32056]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:21:34,378", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [32116]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:21:34,378", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:21:34,416", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:21:51,581", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:21:51,682", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:21:51,684", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:21:51,684", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [32116]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:21:52,267", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [32243]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:21:52,267", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:21:52,306", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:22:06,121", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:22:06,222", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:22:06,223", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:22:06,223", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [32243]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:06,778", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [32365]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:06,779", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:22:06,823", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:22:08,028", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:22:08,128", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:22:08,130", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:22:08,131", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [32365]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:08,759", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [32412]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:08,759", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:22:08,805", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:22:09,207", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:22:09,307", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:22:09,308", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:22:09,308", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [32412]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:09,817", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [32437]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:09,817", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:22:09,867", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:22:12,876", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:22:12,977", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:22:12,978", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:22:12,978", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [32437]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:13,467", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [32476]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:13,468", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:22:13,506", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:22:43,729", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:22:43,830", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:22:43,831", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:22:43,831", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [32476]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:44,400", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [32609]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:44,401", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:22:44,444", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:22:53,983", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:22:54,084", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:22:54,086", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:22:54,086", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [32609]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:54,565", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [32700]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:54,566", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:22:54,605", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:22:56,212", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:22:56,313", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:22:56,314", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:22:56,314", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [32700]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:56,823", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [32764]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:56,823", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:22:56,868", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:22:56,969", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:22:57,070", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:22:57,071", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:22:57,071", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [32764]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:57,717", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [32792]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:22:57,718", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:22:57,761", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:23:02,596", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:23:02,697", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:23:02,698", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:23:02,699", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [32792]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:23:03,268", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [32850]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:23:03,268", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:23:03,307", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:23:44,909", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:23:45,009", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:23:45,011", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:23:45,011", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [32850]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:23:45,549", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [33236]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:23:45,550", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:23:45,593", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:25:37,617", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:25:37,717", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:25:37,719", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:25:37,719", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [33236]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:25:38,214", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [33675]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:25:38,215", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:25:38,255", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:25:47,189", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:25:47,289", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:25:47,291", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:25:47,291", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [33675]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:25:47,882", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [33780]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:25:47,882", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:25:47,922", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:25:51,035", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:25:51,136", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:25:51,137", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:25:51,137", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [33780]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:25:51,628", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [33840]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:25:51,628", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:25:51,669", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:25:56,603", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:25:56,704", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:25:56,705", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:25:56,705", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [33840]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:25:57,206", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [33918]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:25:57,207", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:25:57,243", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:25:58,851", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:25:58,952", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:25:58,953", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:25:58,953", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [33918]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:25:59,506", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [33957]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:25:59,506", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:25:59,544", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:26:03,720", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:26:03,820", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:26:03,822", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:26:03,822", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [33957]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:04,392", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34015]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:04,393", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:26:04,437", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:26:08,248", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:26:08,349", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:26:08,350", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:26:08,350", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34015]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:08,861", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34057]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:08,861", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:26:08,906", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:26:09,409", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:26:09,510", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:26:09,511", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:26:09,511", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34057]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:09,999", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34094]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:10,000", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:26:10,039", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:26:11,343", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:26:11,444", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:26:11,445", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:26:11,446", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34094]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:11,942", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34128]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:11,942", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:26:11,985", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:26:14,396", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:26:14,496", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:26:14,497", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:26:14,498", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34128]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:15,053", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34167]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:15,053", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:26:15,098", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:26:16,707", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:26:16,808", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:26:16,809", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:26:16,809", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34167]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:17,323", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34201]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:17,323", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:26:17,370", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:26:20,083", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:26:20,184", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:26:20,185", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:26:20,185", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34201]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:20,727", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34287]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:20,728", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:26:20,771", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:26:21,577", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:26:21,677", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:26:21,679", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:26:21,679", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34287]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:22,211", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34309]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:22,211", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:26:22,252", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:26:24,664", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:26:24,765", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:26:24,766", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:26:24,766", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34309]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:25,311", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34398]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:25,311", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:26:25,351", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:26:52,332", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:26:52,432", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:26:52,433", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:26:52,434", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34398]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:52,970", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34586]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:26:52,970", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:26:53,011", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:27:01,459", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:27:01,560", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:27:01,561", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:27:01,561", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34586]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:27:02,096", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34694]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:27:02,096", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:27:02,137", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:27:15,329", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:27:15,430", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:27:15,431", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:27:15,431", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34694]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:27:15,974", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34792]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:27:15,974", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:27:16,012", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:27:28,379", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:27:28,480", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:27:28,481", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:27:28,481", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34792]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:27:29,105", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34910]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:27:29,105", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:27:29,168", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:27:34,651", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:27:34,751", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:27:34,752", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:27:34,753", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34910]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:27:35,228", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34984]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:27:35,228", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:27:35,266", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:32:56,780", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:32:56,880", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:32:56,881", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:32:56,881", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34984]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:32:57,459", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [36348]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:32:57,460", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:32:57,508", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:33:05,198", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:33:05,299", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:33:05,300", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:33:05,300", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [36348]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:05,936", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [36445]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:05,936", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:33:05,980", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:33:07,185", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:33:07,285", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:33:07,287", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:33:07,287", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [36445]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:07,948", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [36470]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:07,948", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:33:07,992", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:33:11,703", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:33:11,804", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:33:11,805", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:33:11,805", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [36470]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:12,358", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [36523]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:12,358", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:33:12,413", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:33:12,614", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:33:12,715", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:33:12,716", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:33:12,716", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [36523]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:13,230", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [36561]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:13,230", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:33:13,271", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:33:20,497", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:33:20,598", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:33:20,600", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:33:20,601", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [36561]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:21,351", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [36662]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:21,351", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:33:21,419", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:33:22,021", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:33:22,121", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:33:22,123", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:33:22,123", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [36662]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:22,599", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [36693]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:22,600", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:33:22,639", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:33:27,770", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:33:27,871", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:33:27,872", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:33:27,872", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [36693]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:28,417", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [36760]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:28,417", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:33:28,457", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:33:29,162", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:33:29,263", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:33:29,264", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:33:29,264", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [36760]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:29,789", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [36795]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:29,790", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:33:29,828", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:33:31,036", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:33:31,137", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:33:31,138", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:33:31,138", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [36795]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:31,641", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [36822]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:31,641", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:33:31,681", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:33:59,056", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:33:59,157", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:33:59,158", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:33:59,158", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [36822]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:59,695", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [37053]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:33:59,695", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:33:59,734", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:34:57,881", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:34:57,982", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:34:57,984", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:34:57,984", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [37053]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:34:58,540", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [37397]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:34:58,541", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:34:58,578", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:35:14,796", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:35:14,896", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:35:14,898", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:35:14,898", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [37397]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:35:15,488", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [37587]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:35:15,488", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:35:15,526", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:35:16,230", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:35:16,331", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:35:16,332", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:35:16,332", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [37587]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:35:16,854", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [37623]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:35:16,854", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:35:16,897", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:35:35,656", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:35:35,757", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:35:35,759", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:35:35,759", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [37623]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:35:36,238", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [37779]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:35:36,238", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:35:36,274", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:35:49,026", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:35:49,127", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:35:49,128", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:35:49,128", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [37779]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:35:49,662", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [37880]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:35:49,662", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:35:49,702", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:35:50,406", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:35:50,506", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:35:50,508", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:35:50,508", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [37880]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:35:51,064", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [37918]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:35:51,065", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:35:51,107", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:35:51,811", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:35:51,912", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:35:51,913", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:35:51,913", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [37918]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:35:52,417", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [37951]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:35:52,417", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:35:52,456", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 17:35:53,663", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 17:35:53,764", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 17:35:53,766", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 17:35:53,766", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [37951]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:35:54,367", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [37977]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 17:35:54,368", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 17:35:54,406", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:20:31,183", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [28534]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:20:31,185", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:20:31,263", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:33:22,637", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:33:22,739", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:33:22,739", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:33:22,739", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [28534]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:33:23,194", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [30851]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:33:23,195", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:33:23,232", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:36:47,759", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:36:47,860", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:36:47,862", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:36:47,862", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [30851]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:36:48,420", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [31376]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:36:48,420", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:36:48,461", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:37:02,941", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:37:03,042", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:37:03,043", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:37:03,043", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [31376]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:37:03,733", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [31529]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:37:03,733", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:37:03,790", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:37:03,992", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:37:04,093", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:37:04,094", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:37:04,094", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [31529]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:37:04,576", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [31597]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:37:04,577", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:37:04,623", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:37:05,841", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:37:05,943", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:37:05,944", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:37:05,944", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [31597]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:37:06,519", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [31623]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:37:06,520", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:37:06,561", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:37:06,763", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:37:06,865", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:37:06,867", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:37:06,867", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [31623]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:37:07,352", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [31662]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:37:07,353", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:37:07,390", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:39:58,258", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:39:58,360", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:39:58,361", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:39:58,361", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [31662]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:39:58,816", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [32129]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:39:58,816", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:39:58,857", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:40:15,731", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:40:15,832", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:40:15,833", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:40:15,833", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [32129]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:40:16,323", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [32246]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:40:16,323", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:40:16,361", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:41:44,048", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:41:44,149", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:41:44,150", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:41:44,151", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [32246]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:41:44,612", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [32608]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:41:44,612", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:41:44,650", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:44:32,933", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:44:33,034", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:44:33,036", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:44:33,036", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [32608]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:44:33,555", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [33066]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:44:33,556", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:44:33,592", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:44:38,973", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:44:39,075", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:44:39,077", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:44:39,077", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [33066]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:44:39,565", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [33148]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:44:39,565", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:44:39,602", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:44:49,930", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:44:50,032", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:44:50,033", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:44:50,033", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [33148]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:44:50,568", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [33240]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:44:50,569", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:44:50,609", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:44:54,652", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:44:54,754", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:44:54,755", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:44:54,755", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [33240]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:44:55,208", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [33303]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:44:55,208", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:44:55,249", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:46:16,832", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:46:16,933", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:46:16,935", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:46:16,935", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [33303]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:46:17,392", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [33572]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:46:17,393", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:46:17,433", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:46:40,551", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:46:40,653", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:46:40,654", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:46:40,654", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [33572]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:46:41,136", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [33749]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:46:41,137", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:46:41,174", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:47:10,632", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:47:10,733", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:47:10,734", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:47:10,734", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [33749]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:47:11,211", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [33964]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:47:11,211", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:47:11,250", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:47:35,005", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:47:35,106", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:47:35,106", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:47:35,107", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [33964]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:47:35,620", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34199]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:47:35,621", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:47:35,657", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:47:39,607", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:47:39,708", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:47:39,709", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:47:39,709", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34199]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:47:40,213", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34244]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:47:40,213", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:47:40,255", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:47:43,787", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:47:43,889", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:47:43,891", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:47:43,891", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34244]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:47:46,064", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34313]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:47:46,065", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:47:46,102", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:47:47,759", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:47:47,860", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:47:47,862", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:47:47,862", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34313]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:47:49,169", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34366]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:47:49,169", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:47:49,209", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:47:53,163", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:47:53,265", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:47:53,267", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:47:53,267", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34366]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:47:53,736", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [34467]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:47:53,737", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:47:53,773", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 22:55:41,664", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 22:55:41,766", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 22:55:41,766", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 22:55:41,767", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [34467]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:55:42,259", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [35452]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 22:55:42,260", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 22:55:42,299", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:10:31,435", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:10:31,536", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:10:31,537", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:10:31,537", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [35452]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:10:32,049", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [40273]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:10:32,049", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:10:32,093", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:10:32,897", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:10:32,998", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:10:32,999", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:10:33,000", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [40273]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:10:33,471", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [40338]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:10:33,471", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:10:33,513", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:10:48,868", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:10:48,969", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:10:48,970", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:10:48,970", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [40338]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:10:49,456", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [40455]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:10:49,456", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:10:49,494", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:10:57,542", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:10:57,643", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:10:57,644", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:10:57,644", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [40455]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:10:58,086", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [40548]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:10:58,086", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:10:58,124", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:11:04,776", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:11:04,877", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:11:04,877", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:11:04,878", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [40548]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:05,383", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [40616]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:05,383", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:11:05,422", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:11:16,158", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:11:16,259", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:11:16,261", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:11:16,261", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [40616]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:16,726", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [40712]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:16,726", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:11:16,765", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:11:18,473", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:11:18,574", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:11:18,575", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:11:18,575", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [40712]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:19,035", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [40764]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:19,036", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:11:19,077", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:11:22,997", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:11:23,098", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:11:23,099", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:11:23,100", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [40764]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:23,563", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [40813]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:23,563", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:11:23,601", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:11:39,804", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:11:39,905", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:11:39,906", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:11:39,906", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [40813]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:40,380", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [40905]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:40,380", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:11:40,417", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:11:43,426", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:11:43,526", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:11:43,527", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:11:43,528", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [40905]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:43,996", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [40970]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:43,996", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:11:44,033", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:11:45,238", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:11:45,339", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:11:45,341", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:11:45,341", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [40970]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:45,796", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [40997]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:45,797", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:11:45,835", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:11:46,137", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:11:46,237", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:11:46,238", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:11:46,239", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [40997]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:46,700", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [41029]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:46,700", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:11:46,738", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:11:53,865", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:11:53,966", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:11:53,967", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:11:53,967", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [41029]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:54,484", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [41104]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:54,485", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:11:54,539", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:11:59,367", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:11:59,468", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:11:59,469", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:11:59,469", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [41104]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:59,984", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [41168]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:11:59,985", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:12:00,032", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:12:03,056", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:12:03,157", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:12:03,158", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:12:03,159", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [41168]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:12:03,650", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [41220]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:12:03,651", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:12:03,688", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:12:21,873", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:12:21,974", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:12:21,976", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:12:21,976", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [41220]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:12:22,436", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [41331]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:12:22,437", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:12:22,475", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:14:20,956", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:14:21,056", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:14:21,058", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:14:21,058", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [41331]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:14:21,562", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [41903]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:14:21,562", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:14:21,600", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:14:43,694", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:14:43,794", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:14:43,796", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:14:43,796", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [41903]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:14:44,255", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [42101]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:14:44,255", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:14:44,294", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:14:48,726", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:14:48,827", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:14:48,828", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:14:48,828", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [42101]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:14:49,308", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [42157]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:14:49,308", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:14:49,345", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:14:50,554", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:14:50,655", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:14:50,656", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:14:50,656", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [42157]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:14:51,162", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [42196]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:14:51,162", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:14:51,200", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:14:55,117", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:14:55,218", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:14:55,219", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:14:55,220", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [42196]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:14:55,669", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [42252]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:14:55,669", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:14:55,711", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:14:56,916", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:14:57,017", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:14:57,018", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:14:57,019", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [42252]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:14:57,475", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [42287]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:14:57,475", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:14:57,512", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:15:03,231", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:15:03,332", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:15:03,334", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:15:03,334", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [42287]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:15:03,785", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [42352]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:15:03,785", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:15:03,824", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:15:07,340", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:15:07,441", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:15:07,442", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:15:07,442", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [42352]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:15:07,890", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [42415]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:15:07,890", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:15:07,929", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:16:03,766", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:16:03,867", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:16:03,868", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:16:03,868", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [42415]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:16:04,323", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [42694]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:16:04,323", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:16:04,363", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:16:10,991", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:16:11,092", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:16:11,093", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:16:11,093", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [42694]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:16:11,551", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [42780]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:16:11,551", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:16:11,588", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:16:21,341", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:16:21,441", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:16:21,443", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:16:21,443", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [42780]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:16:21,899", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [42856]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:16:21,899", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:16:21,936", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:16:29,393", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:16:29,494", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:16:29,495", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:16:29,495", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [42856]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:16:29,992", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [42948]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:16:29,992", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:16:30,028", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:18:20,329", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:18:20,430", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:18:20,431", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:18:20,431", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [42948]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:18:20,979", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [43342]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:18:20,979", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:18:21,015", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:18:31,770", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:18:31,871", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:18:31,872", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:18:31,872", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [43342]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:18:32,356", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [43495]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:18:32,356", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:18:32,401", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:40:33,657", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:40:33,758", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:40:33,758", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:40:33,759", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [43495]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:40:34,239", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [46580]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:40:34,239", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:40:34,282", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:40:36,390", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:40:36,490", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:40:36,491", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:40:36,492", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [46580]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:40:36,982", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [46629]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:40:36,982", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:40:37,018", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:42:19,822", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:42:19,923", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:42:19,924", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:42:19,924", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [46629]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:42:20,415", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [46944]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:42:20,415", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:42:20,452", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:42:23,469", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:42:23,570", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:42:23,571", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:42:23,571", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [46944]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:42:24,020", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [47004]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:42:24,020", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:42:24,057", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:42:31,192", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:42:31,293", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:42:31,294", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:42:31,294", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [47004]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:42:31,772", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [47070]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:42:31,773", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:42:31,809", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:42:33,415", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:42:33,516", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:42:33,517", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:42:33,517", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [47070]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:42:33,954", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [47121]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:42:33,954", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:42:33,990", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:42:40,209", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:42:40,310", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:42:40,311", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:42:40,311", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [47121]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:42:40,755", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [47182]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:42:40,755", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:42:40,791", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:42:43,801", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:42:43,902", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:42:43,903", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:42:43,903", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [47182]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:42:44,365", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [47233]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:42:44,365", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:42:44,401", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:42:46,512", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:42:46,613", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:42:46,615", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:42:46,616", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [47233]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:42:47,049", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [47262]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:42:47,050", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:42:47,088", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:45:07,920", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:45:08,020", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:45:08,021", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:45:08,021", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [47262]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:45:08,501", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [47763]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:45:08,501", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:45:08,540", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:45:11,458", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:45:11,558", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:45:11,559", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:45:11,560", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [47763]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:45:12,024", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [47853]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:45:12,024", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:45:12,065", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:45:25,616", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:45:25,717", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:45:25,718", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:45:25,718", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [47853]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:45:26,204", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [47931]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:45:26,204", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:45:26,241", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:48:40,615", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:48:40,717", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:48:40,720", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:48:40,720", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [47931]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:48:41,180", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [48584]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:48:41,180", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:48:41,216", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:48:47,443", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:48:47,544", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:48:47,545", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:48:47,545", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [48584]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:48:48,025", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [48658]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:48:48,025", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:48:48,064", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:48:54,808", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:48:54,909", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:48:54,910", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:48:54,910", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [48658]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:48:55,398", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [48761]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:48:55,399", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:48:55,439", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:51:08,810", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:51:08,911", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:51:08,912", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:51:08,912", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [48761]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:51:09,434", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [49235]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:51:09,435", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:51:09,472", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:51:34,902", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:51:35,003", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:51:35,005", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:51:35,005", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [49235]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:51:35,514", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [49374]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:51:35,515", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:51:35,564", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:51:36,772", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:51:36,872", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:51:36,873", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:51:36,873", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [49374]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:51:37,384", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [49433]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:51:37,384", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:51:37,421", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:51:39,937", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:51:40,037", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:51:40,039", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:51:40,039", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [49433]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:51:40,475", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [49470]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:51:40,475", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:51:40,512", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:51:44,424", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:51:44,525", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:51:44,526", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:51:44,526", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [49470]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:51:45,029", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [49527]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:51:45,029", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:51:45,067", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:52:02,953", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:52:03,054", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:52:03,055", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:52:03,055", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [49527]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:52:03,530", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [49671]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:52:03,531", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:52:03,571", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:52:30,809", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:52:30,910", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:52:30,911", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:52:30,911", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [49671]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:52:31,412", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [49844]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:52:31,412", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:52:31,455", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:52:50,461", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:52:50,561", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:52:50,563", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:52:50,563", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [49844]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:52:51,074", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [49964]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:52:51,074", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:52:51,110", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:53:03,661", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:53:03,762", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:53:03,764", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:53:03,764", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [49964]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:53:04,276", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [50097]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:53:04,277", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:53:04,322", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:53:13,181", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:53:13,282", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:53:13,283", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:53:13,283", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [50097]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:53:13,764", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [50205]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:53:13,765", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:53:13,802", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:53:14,104", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:53:14,205", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:53:14,206", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:53:14,206", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [50205]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:53:14,695", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [50245]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:53:14,696", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:53:14,749", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:53:18,170", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:53:18,271", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:53:18,272", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:53:18,272", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [50245]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:53:18,763", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [50301]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:53:18,763", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:53:18,801", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:54:45,826", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:54:45,927", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:54:45,928", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:54:45,928", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [50301]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:54:46,395", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [50819]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:54:46,395", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:54:46,433", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:55:02,405", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:55:02,506", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:55:02,507", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:55:02,507", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [50819]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:55:02,962", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [51013]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:55:02,962", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:55:02,999", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-21 23:55:18,168", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-21 23:55:18,269", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-21 23:55:18,270", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-21 23:55:18,270", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [51013]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:55:18,788", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [51175]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-21 23:55:18,789", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-21 23:55:18,827", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-22 09:02:23,035", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [4264]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:02:23,035", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-22 09:02:23,109", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-22 09:27:05,040", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-22 09:27:05,141", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22 09:27:05,141", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-22 09:27:05,141", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [4264]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:27:05,663", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [13999]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:27:05,664", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-22 09:27:05,701", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-22 09:27:10,528", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-22 09:27:10,629", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22 09:27:10,630", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-22 09:27:10,630", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [13999]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:27:11,099", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [14054]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:27:11,100", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-22 09:27:11,140", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-22 09:27:13,758", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-22 09:27:13,859", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22 09:27:13,860", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-22 09:27:13,860", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [14054]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:27:14,339", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [14124]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:27:14,339", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-22 09:27:14,381", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-22 09:49:52,802", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-22 09:49:52,903", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22 09:49:52,904", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-22 09:49:52,904", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [14124]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:49:53,414", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [18568]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:49:53,414", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-22 09:49:53,456", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-22 09:49:59,676", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-22 09:49:59,776", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22 09:49:59,778", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-22 09:49:59,778", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [18568]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:50:00,205", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [18643]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:50:00,205", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-22 09:50:00,242", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-22 09:50:05,059", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-22 09:50:05,160", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22 09:50:05,161", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-22 09:50:05,161", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [18643]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:50:05,628", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [18729]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:50:05,628", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-22 09:50:05,665", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-22 09:50:09,080", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-22 09:50:09,181", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22 09:50:09,182", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-22 09:50:09,182", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [18729]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:50:09,687", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [18781]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:50:09,687", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-22 09:50:09,728", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-22 09:50:46,498", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-22 09:50:46,598", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22 09:50:46,599", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-22 09:50:46,599", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [18781]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:50:47,118", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [19095]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:50:47,119", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-22 09:50:47,173", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-22 09:50:48,382", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-22 09:50:48,483", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22 09:50:48,484", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-22 09:50:48,484", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [19095]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:50:48,973", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [19137]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:50:48,973", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-22 09:50:49,013", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-22 09:51:10,423", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-22 09:51:10,524", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22 09:51:10,526", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-22 09:51:10,526", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [19137]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:51:11,004", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [19264]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:51:11,004", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-22 09:51:11,039", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-22 09:51:11,744", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-22 09:51:11,845", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22 09:51:11,846", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-22 09:51:11,846", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [19264]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:51:12,332", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [19299]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:51:12,332", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-22 09:51:12,369", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-22 09:51:13,575", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-22 09:51:13,676", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22 09:51:13,677", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-22 09:51:13,678", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [19299]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:51:14,187", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [19330]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:51:14,187", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-22 09:51:14,224", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-22 09:51:15,834", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-22 09:51:15,935", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22 09:51:15,936", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-22 09:51:15,937", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [19330]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:51:16,360", "levelname": "INFO", "name": "uvicorn.error", "message": "Started server process [19358]", "color_message": "Started server process [\u001b[36m%d\u001b[0m]"}
+{"asctime": "2025-05-22 09:51:16,361", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application startup."}
+{"asctime": "2025-05-22 09:51:16,398", "levelname": "INFO", "name": "uvicorn.error", "message": "Application startup complete."}
+{"asctime": "2025-05-22 09:51:25,955", "levelname": "INFO", "name": "uvicorn.error", "message": "Shutting down"}
+{"asctime": "2025-05-22 09:51:26,056", "levelname": "INFO", "name": "uvicorn.error", "message": "Waiting for application shutdown."}
+{"asctime": "2025-05-22 09:51:26,057", "levelname": "INFO", "name": "uvicorn.error", "message": "Application shutdown complete."}
+{"asctime": "2025-05-22 09:51:26,058", "levelname": "INFO", "name": "uvicorn.error", "message": "Finished server process [19358]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}

@@ -1,8 +1,9 @@
 import sys
 from pathlib import Path
 
+import pandas as pd
 import typer
-from cli_utils import load_fixture
+from cli_utils import load_communes, load_fixture
 from rich import print as r_print
 from rich.console import Console
 from rich.table import Table
@@ -20,6 +21,10 @@ app = typer.Typer()
 settings = Settings()
 console = Console()
 
+CSVS = [
+    "communes-france-2025",
+]
+
 FIXTURES = [
     "geo.language",
     "geo.currency",
@@ -28,14 +33,14 @@ FIXTURES = [
     "geo.country_data",
     "geo.administrative_level_one",
     "geo.administrative_level_two",
-    "geo.city_type",
-    "geo.city",
+    # "geo.city_type",
+    # "geo.city",
     "geo.street_type",
-    "geo.street",
-    "geo.address",
+    # "geo.street",
+    # "geo.address",
     "geo.top_level_domain",
     "assets.asset_type",
-    "assets.asset",
+    # "assets.asset",
     # "services.service_type",
     # "services.service",
 ]
@@ -182,7 +187,7 @@ def generateallpermissions():
             "country_data",
             "administrative_level_one",
             "administrative_level_two",
-            "city_type",
+            # "city_type",
             "city",
             "street_type",
             "street",
@@ -213,6 +218,40 @@ def generateallpermissions():
         await Tortoise.close_connections()
 
     run_async(_generate_all_permissions())
+
+
+@app.command()
+def loaddatasets():
+    """Load datasets from CSV files into the database."""
+
+    async def _load_datasets():
+        await Tortoise.init(
+            db_url=settings.db_url,
+            modules={"models": [f"models.{model}" for model in settings.models]},
+        )
+        console.print("[bold cyan]Loading datasets...[/bold cyan]")
+
+        for dataset_name in CSVS:
+            csv_path = settings.csv_path / "france" / f"{dataset_name}.csv"
+            print(csv_path)
+            if not csv_path.exists():
+                console.print(f"[yellow]Skipping {dataset_name} (CSV not found).[/yellow]")
+                continue
+
+            console.print(f"[blue]Processing:[/blue] {dataset_name}")
+
+            if dataset_name == "communes-france-2025":
+                await load_communes(csv_path)
+
+            # elif dataset_name == "departments-france":
+            #     await load_departments(csv_path)
+
+            # Add other dataset-specific loaders here...
+
+        await Tortoise.close_connections()
+        console.print("[green]✅ All datasets loaded successfully.[/green]")
+
+    run_async(_load_datasets())
 
 
 if __name__ == "__main__":

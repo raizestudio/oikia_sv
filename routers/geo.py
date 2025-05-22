@@ -2,13 +2,12 @@ from typing import Annotated
 
 from fastapi import APIRouter, Query, status
 
-from models.geo import (
+from models.geo import (  # CityType,
     Address,
     AdministrativeLevelOne,
     AdministrativeLevelTwo,
     CallingCode,
     City,
-    CityType,
     Continent,
     Country,
     Currency,

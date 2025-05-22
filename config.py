@@ -1,3 +1,4 @@
+from pathlib import Path
 from typing import List
 
 from pydantic_settings import BaseSettings
@@ -59,3 +60,11 @@ class Settings(BaseSettings):
     @property
     def celery_broker_url(self) -> str:
         return f"amqp://{self.rabbitmq_user}:{self.rabbitmq_password}" f"@{self.rabbitmq_host}:{self.rabbitmq_port}//"
+
+    @property
+    def fixtures_path(self) -> Path:
+        return Path(__file__).resolve().parent / "fixtures"
+
+    @property
+    def csv_path(self) -> Path:
+        return Path(__file__).resolve().parent / "data" / "csv"

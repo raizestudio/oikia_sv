@@ -1,7 +1,6 @@
 [
   {
     "name": "Tours",
-    "city_type": "MVILLE",
-    "administrative_level_two": "FR-37"
+    "administrative_level_two": "fr-37"
   }
 ]
