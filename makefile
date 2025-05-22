@@ -24,10 +24,10 @@ lint:
 install:
 	uv pip install -r pyproject.toml
 
-
 # Install dev
 install-dev:
 	python cli/cli.py core loadallfixtures dev
+	python cli/cli.py core loaddatasets
 
 # Reset database
 reset-db:

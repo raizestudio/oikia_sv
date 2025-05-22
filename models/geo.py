@@ -220,7 +220,7 @@ class City(Model):
 class StreetType(Model):
 
     code = fields.CharField(pk=True, max_length=10, unique=True)
-    name = fields.CharField(max_length=50, unique=True)
+    name = fields.CharField(max_length=50)
     short_name = fields.CharField(max_length=10, null=True)
 
     def __str__(self):
@@ -230,10 +230,17 @@ class StreetType(Model):
 class Street(Model):
     """Model for streets."""
 
-    name = fields.CharField(max_length=50, unique=True)
+    name = fields.CharField(max_length=50)
 
     street_type = fields.ForeignKeyField("models.StreetType", related_name="street_type")
     city = fields.ForeignKeyField("models.City", related_name="city")
+
+    class Meta:
+        unique_together = ("name", "street_type", "city")
+        # indexes = [
+        #     ("name", "street_type"),
+        #     ("name", "city"),
+        # ]
 
     def __str__(self):
         return self.name

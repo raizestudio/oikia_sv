@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 import typer
-from cli_utils import load_communes, load_fixture
+from cli_utils import load_cities, load_fixture, load_street_types, load_streets
 from rich import print as r_print
 from rich.console import Console
 from rich.table import Table
@@ -35,7 +35,7 @@ FIXTURES = [
     "geo.administrative_level_two",
     # "geo.city_type",
     # "geo.city",
-    "geo.street_type",
+    # "geo.street_type",
     # "geo.street",
     # "geo.address",
     "geo.top_level_domain",
@@ -231,22 +231,14 @@ def loaddatasets():
         )
         console.print("[bold cyan]Loading datasets...[/bold cyan]")
 
-        for dataset_name in CSVS:
-            csv_path = settings.csv_path / "france" / f"{dataset_name}.csv"
-            print(csv_path)
-            if not csv_path.exists():
-                console.print(f"[yellow]Skipping {dataset_name} (CSV not found).[/yellow]")
-                continue
+        console.print(f"[blue]Processing:[/blue] cities.")
+        await load_cities()
 
-            console.print(f"[blue]Processing:[/blue] {dataset_name}")
+        console.print(f"[blue]Processing:[/blue] street types.")
+        await load_street_types()
 
-            if dataset_name == "communes-france-2025":
-                await load_communes(csv_path)
-
-            # elif dataset_name == "departments-france":
-            #     await load_departments(csv_path)
-
-            # Add other dataset-specific loaders here...
+        console.print(f"[blue]Processing:[/blue] streets.")
+        await load_streets()
 
         await Tortoise.close_connections()
         console.print("[green]✅ All datasets loaded successfully.[/green]")
