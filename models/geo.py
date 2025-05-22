@@ -217,6 +217,25 @@ class City(Model):
         return self.name
 
 
+class CityData(Model):
+    """Model for city statistics."""
+
+    population = fields.IntField(null=True)
+    area = fields.FloatField(null=True)
+    population_density = fields.FloatField(null=True)
+    median_income = fields.FloatField(null=True)
+
+    city = fields.OneToOneField("models.City", related_name="city_data_city")
+
+    async def save(self, *args, **kwargs):
+        # --- Handle population density calculation ---
+        if self.population is not None and self.area is not None and self.area > 0:
+            self.population_density = self.population / self.area
+        else:
+            self.population_density = None
+        await super().save(*args, **kwargs)
+
+
 class StreetType(Model):
 
     code = fields.CharField(pk=True, max_length=10, unique=True)

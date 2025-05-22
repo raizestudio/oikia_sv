@@ -230,6 +230,7 @@ def fetchdatasets():
 
     async def _fetch_datasets():
         # TODO: Just very basic implementation, need to be improved ( e.g. handle multiple sources )
+        # Source URL: https://adresse.data.gouv.fr/data/ban/adresses/latest/csv
         console.print("[bold cyan]Fetching datasets...[/bold cyan]")
         base_url = "https://adresse.data.gouv.fr/data/ban/adresses/latest/csv"
         try:

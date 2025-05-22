@@ -60,8 +60,16 @@ async def load_fixture(app: str, model: str, env: str = "prod") -> None:
     await Tortoise.close_connections()
 
 
+async def load_administrative_levels():
+    # TODO:
+    # Source URL l2: https://www.data.gouv.fr/fr/datasets/departements-de-france/
+    # Source URL l1: https://www.data.gouv.fr/fr/datasets/regions-de-france/
+    raise NotImplementedError("Loading administrative levels is not implemented yet.")
+
+
 async def load_cities():
     """Load cities from a CSV file into the database."""
+    # Source URL: https://www.data.gouv.fr/fr/datasets/communes-france-1/
     csv_path = settings.csv_path / "france" / "cities" / "communes-france-2025.csv"
 
     # --- 1. Pre-load Administrative Level Data ---
@@ -162,7 +170,8 @@ async def load_cities():
 
 
 async def load_street_types():
-    """Load street types from a CSV file into the database more efficiently."""
+    """Load street types from a CSV file into the database."""
+    # Source URL: https://www.data.gouv.fr/fr/datasets/finess-types-de-voies/
     csv_path = settings.csv_path / "france" / "streets" / "types" / "interhop-adresses-types-voies.csv"
 
     # --- 1. Read and Prepare Data from CSV ---
@@ -214,6 +223,7 @@ async def load_street_types():
 
 async def load_streets():
     """Load streets from CSV files into the database."""
+    # Source URL: https://www.lesruesdefrance.com/liste_rue_par_dep_csv.php?p=tele
     csv_paths_root = settings.csv_path / "france" / "streets"
     all_csv_files = list(csv_paths_root.glob("*.csv"))
 
