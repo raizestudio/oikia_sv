@@ -16,6 +16,20 @@ class AdministrativeLevelsEnum(IntEnum):
     TWO = 2
 
 
+class AnalyticsMixin:
+    """Provides logic for auto-calculating population density."""
+
+    async def calculate_density(self):
+        if getattr(self, "population", None) is not None and getattr(self, "area", None) not in (None, 0):
+            self.population_density = self.population / self.area
+        else:
+            self.population_density = None
+
+    async def save(self, *args, **kwargs):
+        await self.calculate_density()
+        await super().save(*args, **kwargs)
+
+
 class Language(Model):
     """Model for languages."""
 
@@ -217,7 +231,7 @@ class City(Model):
         return self.name
 
 
-class CityData(Model):
+class CityData(AnalyticsMixin, Model):
     """Model for city statistics."""
 
     population = fields.IntField(null=True)
@@ -226,14 +240,6 @@ class CityData(Model):
     median_income = fields.FloatField(null=True)
 
     city = fields.OneToOneField("models.City", related_name="city_data_city")
-
-    async def save(self, *args, **kwargs):
-        # --- Handle population density calculation ---
-        if self.population is not None and self.area is not None and self.area > 0:
-            self.population_density = self.population / self.area
-        else:
-            self.population_density = None
-        await super().save(*args, **kwargs)
 
 
 class StreetType(Model):
@@ -341,3 +347,48 @@ class Address(Model):
 
     def __str__(self):
         return f"{self.number} {self.street}"
+
+
+class GeoData(Model):
+    """Model for geographical data."""
+
+    geojson = fields.JSONField(null=True)
+
+    continent = fields.ForeignKeyField("models.Continent", related_name="geo_data_continent", null=True)
+    country = fields.ForeignKeyField("models.Country", related_name="geo_data_country", null=True)
+    administrative_level_one = fields.ForeignKeyField("models.AdministrativeLevelOne", related_name="geo_data_administrative_level_one", null=True)
+    administrative_level_two = fields.ForeignKeyField("models.AdministrativeLevelTwo", related_name="geo_data_administrative_level_two", null=True)
+    city = fields.ForeignKeyField("models.City", related_name="geo_data_city", null=True)
+    street = fields.ForeignKeyField("models.Street", related_name="geo_data_street", null=True)
+
+    def validate_single_fk(self):
+        """Validate that exactly one foreign key is set."""
+        fks = [
+            self.continent_id,
+            self.country_id,
+            self.administrative_level_one_id,
+            self.administrative_level_two_id,
+            self.city_id,
+            self.street_id,
+        ]
+        if sum(1 for x in fks if x is not None) != 1:
+            raise ValueError("GeoData must be linked to exactly one entity.")
+
+    @property
+    def linked_entity_type(self):
+        for field in [
+            "continent",
+            "country",
+            "administrative_level_one",
+            "administrative_level_two",
+            "city",
+            "street",
+        ]:
+            if getattr(self, f"{field}_id") is not None:
+                return field
+        return None
+
+    async def save(self, *args, **kwargs):
+        """Override save method to validate single foreign key."""
+        self.validate_single_fk()
+        await super().save(*args, **kwargs)

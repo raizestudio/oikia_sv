@@ -3,11 +3,17 @@ import sys
 from pathlib import Path
 from urllib.parse import urljoin
 
-import pandas as pd
 import requests
 import typer
 from bs4 import BeautifulSoup
-from cli_utils import load_cities, load_fixture, load_street_types, load_streets
+from cli_utils import (
+    load_cities,
+    load_cities_data,
+    load_fixture,
+    load_geo_data,
+    load_street_types,
+    load_streets,
+)
 from rich import print as r_print
 from rich.console import Console
 from rich.table import Table
@@ -19,11 +25,12 @@ sys.path.append(str(Path(__file__).resolve().parent.parent))
 from config import Settings
 from models.auth import Permission
 from models.core import Menu
-from models.geo import Continent
+from models.geo import AdministrativeLevelOne, Continent, Country, GeoData
 
 app = typer.Typer()
 settings = Settings()
 console = Console()
+from typing import List
 
 CSVS = [
     "communes-france-2025",
@@ -131,6 +138,23 @@ def loadfixture(app: str, model: str, env: str = typer.Argument("prod")):
         await load_fixture(app, model, env)
 
     run_async(_load_fixture())
+
+
+@app.command()
+def loaddev(flags: List[str] = []):
+    if not flags:
+        # No flags: run everything by default
+        loadallfixtures("dev")
+        loaddatasets()
+        loadgeodata()
+        return
+
+    if "fixtures" in flags:
+        loadallfixtures("dev")
+    if "datasets" in flags:
+        loaddatasets()
+    if "geodata" in flags:
+        loadgeodata()
 
 
 @app.command()
@@ -287,6 +311,9 @@ def loaddatasets():
         console.print(f"[blue]Processing:[/blue] cities.")
         await load_cities()
 
+        console.print(f"[blue]Processing:[/blue] cities data.")
+        await load_cities_data()
+
         console.print(f"[blue]Processing:[/blue] street types.")
         await load_street_types()
 
@@ -297,6 +324,39 @@ def loaddatasets():
         console.print("[green]✅ All datasets loaded successfully.[/green]")
 
     run_async(_load_datasets())
+
+
+@app.command()
+def loadgeodata():
+    """Load geographical data from the web and store it in the database."""
+
+    async def _load_geo_data():
+        await Tortoise.init(
+            db_url=settings.db_url,
+            modules={"models": [f"models.{model}" for model in settings.models]},
+        )
+        console.print("[bold cyan]Loading geographical data...[/bold cyan]")
+
+        console.print(f"[blue]Processing:[/blue] France regions.")
+        await load_geo_data()
+
+    run_async(_load_geo_data())
+
+
+@app.command()
+def test():
+    """Just for testing purposes"""
+
+    async def _test():
+        await Tortoise.init(
+            db_url=settings.db_url,
+            modules={"models": [f"models.{model}" for model in settings.models]},
+        )
+        console.print("[blue]Processing:[/blue] test command.")
+
+        console.print("[bold green]Testing command was successful![/bold green]")
+
+    run_async(_test())
 
 
 if __name__ == "__main__":

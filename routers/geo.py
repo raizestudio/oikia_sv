@@ -8,9 +8,11 @@ from models.geo import (  # CityType,
     AdministrativeLevelTwo,
     CallingCode,
     City,
+    CityData,
     Continent,
     Country,
     Currency,
+    GeoData,
     Language,
     PhoneNumber,
     Street,
@@ -241,28 +243,28 @@ async def create_administrative_level_two(
     return _administrative_level_two
 
 
-@router.get("/city-types")
-async def get_city_types():
-    _city_types = await CityType.all()
-    return _city_types
+# @router.get("/city-types")
+# async def get_city_types():
+#     _city_types = await CityType.all()
+#     return _city_types
 
 
-@router.get("/city-types/{city_type}")
-async def get_city_type(city_type: str):
-    _city_type = await CityType.get(code=city_type)
-    return _city_type
+# @router.get("/city-types/{city_type}")
+# async def get_city_type(city_type: str):
+#     _city_type = await CityType.get(code=city_type)
+#     return _city_type
 
 
-@router.post("/city-types")
-async def create_city_type(city_type: CityTypeCreate):
-    _city_type = await CityType.create(
-        code=city_type.code,
-        name=city_type.name,
-        description=city_type.description,
-        population_min=city_type.population_min,
-        population_max=city_type.population_max,
-    )
-    return _city_type
+# @router.post("/city-types")
+# async def create_city_type(city_type: CityTypeCreate):
+#     _city_type = await CityType.create(
+#         code=city_type.code,
+#         name=city_type.name,
+#         description=city_type.description,
+#         population_min=city_type.population_min,
+#         population_max=city_type.population_max,
+#     )
+#     return _city_type
 
 
 @router.get("/cities")
@@ -279,18 +281,44 @@ async def get_city(city: str):
 
 @router.post("/cities")
 async def create_city(city: CityCreate):
-    _city_type = await CityType.get(code=city.city_type)
+    # _city_type = await CityType.get(code=city.city_type)
     _administrative_level_one = await AdministrativeLevelOne.get(code=city.administrative_level_one)
     _administrative_level_two = await AdministrativeLevelTwo.get(code=city.administrative_level_two)
     _city = await City.create(
         name=city.name,
         postal_code=city.postal_code,
         insee_code=city.insee_code,
-        city_type=_city_type,
+        # city_type=_city_type,
         administrative_level_one=_administrative_level_one,
         administrative_level_two=_administrative_level_two,
     )
     return _city
+
+
+@router.get("/cities-data")
+async def get_cities_data():
+    _cities_data = await CityData.all()
+    return _cities_data
+
+
+# TODO: missing schema
+# @router.post("/cities-data")
+# async def create_city_data(city_data: CityData):
+#     _city = await City.get(id=city_data.city)
+#     _administrative_level_one = await AdministrativeLevelOne.get(code=city_data.administrative_level_one)
+#     _administrative_level_two = await AdministrativeLevelTwo.get(code=city_data.administrative_level_two)
+#     _city_data = await CityData.create(
+#         city=_city,
+#         administrative_level_one=_administrative_level_one,
+#         administrative_level_two=_administrative_level_two,
+#     )
+#     return _city_data
+
+
+@router.get("cities-data/{city_data}")
+async def get_city_data(city_data: str):
+    _city_data = await CityData.get(id=city_data)
+    return _city_data
 
 
 @router.get("/street-types")
@@ -362,3 +390,29 @@ async def get_address(address: str):
 async def create_address(address: AddressCreate):
     _address = await Address.create()
     return _address
+
+
+@router.get("/geo-data")
+async def get_geo_data():
+    _geo_data = await GeoData.all()
+    return _geo_data
+
+
+@router.get("/geo-data/{geo_data}")
+async def get_geo_data_by_id(geo_data: str):
+    _geo_data = await GeoData.get(id=geo_data)
+    return _geo_data
+
+
+@router.post("/geo-data")
+async def create_geo_data(geo_data: GeoData):
+    _geo_data = await GeoData.create(
+        geojson=geo_data.geodata,
+        continent=geo_data.continent,
+        country=geo_data.country,
+        administrative_level_one=geo_data.administrative_level_one,
+        administrative_level_two=geo_data.administrative_level_two,
+        city=geo_data.city,
+        street=geo_data.street,
+    )
+    return _geo_data

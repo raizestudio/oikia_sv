@@ -68,3 +68,7 @@ class Settings(BaseSettings):
     @property
     def csv_path(self) -> Path:
         return Path(__file__).resolve().parent / "data" / "csv"
+
+    @property
+    def json_path(self) -> Path:
+        return Path(__file__).resolve().parent / "data" / "json"

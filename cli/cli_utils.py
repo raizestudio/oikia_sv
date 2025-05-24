@@ -12,6 +12,8 @@ from models.geo import (
     AdministrativeLevelOne,
     AdministrativeLevelTwo,
     City,
+    CityData,
+    GeoData,
     Street,
     StreetType,
 )
@@ -169,6 +171,93 @@ async def load_cities():
         console.print(f"[red]Error during bulk city creation: {e}[/red]")
 
 
+async def load_cities_data():
+    """Load cities data from a CSV file into the database."""
+    # Source URL: https://www.insee.fr/fr/statistiques/5020062?sommaire=5040030
+    # The link above only provides salary for a few cities, not all.
+    # It was cleaned and converted to CSV format, data was added.
+    csv_path = settings.csv_path / "france" / "analytics" / "salary_per_city.csv"
+
+    # --- 1. Read and Prepare Data from CSV ---
+    console.print(f"[cyan]Reading city data from: {csv_path}...[/cyan]")
+    try:
+        df = pd.read_csv(
+            csv_path,
+            sep=",",
+            encoding="utf-8",
+            dtype={"code_postal": str, "p21_pop": str},
+        )
+
+        # TODO: Population needs to move, it needs to be per code_insee ( dataset is available, for salary it's not as trivial )
+        required_csv_cols = ["code_postal", "salary", "p21_pop"]
+        missing_cols = [col for col in required_csv_cols if col not in df.columns]
+
+        if missing_cols:
+            console.print(f"[red]Error: CSV file {csv_path.name} is missing required columns: {', '.join(missing_cols)}.[/red]")
+            return
+
+        df = df[required_csv_cols]
+        df.dropna(subset=["code_postal", "salary", "p21_pop"], inplace=True)
+        for col in required_csv_cols:
+            if col in df:
+                df[col] = df[col].astype(str).str.strip()
+
+        df = df[df["code_postal"] != ""]
+        df.drop_duplicates(subset=["code_postal"], keep="first", inplace=True)
+
+    except FileNotFoundError:
+        console.print(f"[red]Error: Cities CSV file not found at {csv_path}.[/red]")
+        return
+
+    except Exception as e:
+        console.print(f"[red]Error reading or parsing cities CSV {csv_path.name}: {e}[/red]")
+        return
+
+    if df.empty:
+        console.print(f"[yellow]No valid city data found in {csv_path.name} after cleaning and deduplication.[/yellow]")
+        return
+
+    city_data_objects_to_create = []
+    for row_dict in df.to_dict(orient="records"):
+        # city_instance = await City.get_or_none(code_postal=row_dict["code_postal"])
+        city_instances = await City.filter(code_postal=row_dict["code_postal"]).prefetch_related("administrative_level_one", "administrative_level_two")
+
+        if not city_instances:
+            console.print(f"[yellow]Skipping city data for '{row_dict['code_postal']}' due to missing city instance.[/yellow]")
+            continue
+
+        for city_instance in city_instances:
+            city_data_obj_data = {
+                "city": city_instance,
+                "median_income": row_dict["salary"],
+                "population": row_dict["p21_pop"],
+            }
+            city_data_objects_to_create.append(CityData(**city_data_obj_data))
+
+    #     if not city_instance:
+    #         console.print(f"[yellow]Skipping city data for '{row_dict['code_postal']}' due to missing city instance.[/yellow]")
+    #         continue
+
+    #     city_data_obj_data = {
+    #         "city": city_instance,
+    #         "salary": row_dict["salary"],
+    #     }
+    #     city_data_objects_to_create.append(CityData(**city_data_obj_data))
+
+    if not city_data_objects_to_create:
+        console.print("[yellow]No city data objects to create after processing CSV data and city instance mapping.[/yellow]")
+        return
+    # --- 3. Bulk Create City Data in Database ---
+    console.print(f"[cyan]Attempting to bulk create {len(city_data_objects_to_create)} city data objects...[/cyan]")
+    try:
+        await CityData.bulk_create(city_data_objects_to_create, ignore_conflicts=True)
+        console.print(f"[green]City data bulk processing complete. {len(city_data_objects_to_create)} candidates processed.[/green]")
+
+    except Exception as e:
+        console.print(f"[red]Error during bulk city data creation: {e}[/red]")
+        console.print("[yellow]Some city data may not have been created. Consider retrying or individual processing for failed items.[/yellow]")
+
+
 async def load_street_types():
     """Load street types from a CSV file into the database."""
     # Source URL: https://www.data.gouv.fr/fr/datasets/finess-types-de-voies/
@@ -316,6 +405,51 @@ async def load_streets():
         # Note: `ignore_conflicts=True` doesn't usually return which objects were created vs. ignored.
         console.print(f"[green]Street bulk processing completed. {len(all_street_objects_to_create)} candidates processed.[/green]")
         # TODO: Add logic to check which streets were actually created vs. ignored.
+
     except Exception as e:
         console.print(f"[red]Error during bulk street creation: {e}[/red]")
         console.print("[yellow]Some streets may not have been created. Consider retrying or individual processing for failed items.[/yellow]")
+
+
+async def read_geojson(file_path: Path) -> dict:
+    """Read a GeoJSON file and return its content."""
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            geojson_data = json.load(f)
+        return geojson_data
+    except FileNotFoundError:
+        console.print(f"[red]Error: GeoJSON file not found at {file_path}.[/red]")
+        return {}
+    except json.JSONDecodeError as e:
+        console.print(f"[red]Error decoding GeoJSON file {file_path.name}: {e}[/red]")
+        return {}
+    except Exception as e:
+        console.print(f"[red]Unexpected error reading GeoJSON file {file_path.name}: {e}[/red]")
+        return {}
+
+
+async def load_geo_data():
+    """Load geo data from GeoJSON files into the database."""
+    geojson_path = settings.json_path / "france" / "regions.json"
+
+    console.print(f"[cyan]Loading geo data from: {geojson_path}...[/cyan]")
+    geo_data = await read_geojson(geojson_path)
+
+    if not geo_data:
+        console.print("[red]No valid geo data found to process.[/red]")
+        return
+
+    for feature in geo_data.get("features", []):
+        code_insee = feature["properties"].get("code")
+        if not code_insee:
+            console.print(f"[yellow]Skipping feature without INSEE code: {feature['properties']}[/yellow]")
+            continue
+
+        level_one_instance = await AdministrativeLevelOne.get_or_none(code_insee=code_insee)
+        if not level_one_instance:
+            console.print(f"[yellow]AdministrativeLevelOne with code {code_insee} not found. Creating new instance.[/yellow]")
+            level_one_instance = await AdministrativeLevelOne.create(code_insee=code_insee, geojson=feature)
+
+        await GeoData.update_or_create(geojson=feature, administrative_level_one=level_one_instance)
+
+    console.print("[green]Geo data loaded successfully.[/green]")

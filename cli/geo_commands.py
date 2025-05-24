@@ -11,7 +11,17 @@ from tortoise.exceptions import DoesNotExist
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 
 from config import Settings
-from models.geo import Continent, Country, Currency, Language
+from models.geo import (
+    Address,
+    AdministrativeLevelOne,
+    AdministrativeLevelTwo,
+    City,
+    Continent,
+    Country,
+    Currency,
+    Language,
+    Street,
+)
 
 app = typer.Typer()
 settings = Settings()
@@ -325,6 +335,246 @@ def getcountry(code_iso2: str):
         await Tortoise.close_connections()
 
     run_async(_get_country())
+
+
+@app.command()
+def listadministrativelevelones():
+    """List all administrative level ones."""
+
+    async def _list_administrative_level_ones():
+        await Tortoise.init(
+            db_url=settings.db_url,
+            modules={"models": ["models.geo"]},
+        )
+        _administrative_level_ones = await AdministrativeLevelOne.all()
+        table = Table("Code", "Name")
+        for administrative_level_one in _administrative_level_ones:
+            table.add_row(administrative_level_one.code, administrative_level_one.name)
+        console.print(table)
+
+        await Tortoise.close_connections()
+
+    run_async(_list_administrative_level_ones())
+
+
+@app.command()
+def createadministrativelevelone(code: str, name: str):
+    """Create administrative level one"""
+
+    async def _create_administrative_level_one():
+        await Tortoise.init(
+            db_url=settings.db_url,
+            modules={"models": ["models.geo"]},
+        )
+        _administrative_level_one = await AdministrativeLevelOne.create(code=code, name=name)
+        typer.echo(_administrative_level_one)
+
+        await Tortoise.close_connections()
+
+    run_async(_create_administrative_level_one())
+
+
+@app.command()
+def getadministrativelevelone(code: str):
+    """Get administrative level one"""
+
+    async def _get_administrative_level_one():
+        await Tortoise.init(
+            db_url=settings.db_url,
+            modules={"models": ["models.geo"]},
+        )
+        try:
+            _administrative_level_one = await AdministrativeLevelOne.get(code=code)
+            table = Table("Code", "Name")
+            table.add_row(_administrative_level_one.code, _administrative_level_one.name)
+            console.print(table)
+
+        except DoesNotExist:
+            typer.echo(f"Administrative level one with code {code} does not exist.")
+
+        await Tortoise.close_connections()
+
+    run_async(_get_administrative_level_one())
+
+
+@app.command()
+def listadministrativeleveltwos():
+    """List all administrative level twos."""
+
+    async def _list_administrative_level_twos():
+        await Tortoise.init(
+            db_url=settings.db_url,
+            modules={"models": ["models.geo"]},
+        )
+        _administrative_level_twos = await AdministrativeLevelTwo.all()
+        table = Table("Code", "Name")
+        for administrative_level_two in _administrative_level_twos:
+            table.add_row(administrative_level_two.code, administrative_level_two.name)
+        console.print(table)
+
+        await Tortoise.close_connections()
+
+    run_async(_list_administrative_level_twos())
+
+
+@app.command()
+def createadministrativeleveltwo(code: str, name: str):
+    """Create administrative level two"""
+
+    async def _create_administrative_level_two():
+        await Tortoise.init(
+            db_url=settings.db_url,
+            modules={"models": ["models.geo"]},
+        )
+        _administrative_level_two = await AdministrativeLevelTwo.create(code=code, name=name)
+        typer.echo(_administrative_level_two)
+
+        await Tortoise.close_connections()
+
+    run_async(_create_administrative_level_two())
+
+
+@app.command()
+def getadministrativeleveltwo(code: str):
+    """Get administrative level two"""
+
+    async def _get_administrative_level_two():
+        await Tortoise.init(
+            db_url=settings.db_url,
+            modules={"models": ["models.geo"]},
+        )
+        try:
+            _administrative_level_two = await AdministrativeLevelTwo.get(code=code)
+            table = Table("Code", "Name")
+            table.add_row(_administrative_level_two.code, _administrative_level_two.name)
+            console.print(table)
+
+        except DoesNotExist:
+            typer.echo(f"Administrative level two with code {code} does not exist.")
+
+        await Tortoise.close_connections()
+
+    run_async(_get_administrative_level_two())
+
+
+@app.command()
+def listcities():
+    """List all cities."""
+
+    async def _list_cities():
+        await Tortoise.init(
+            db_url=settings.db_url,
+            modules={"models": ["models.geo"]},
+        )
+        _cities = await City.all()
+        table = Table("Code Postal", "Name")
+        for city in _cities:
+            table.add_row(city.code_postal, city.name)
+        console.print(table)
+
+        await Tortoise.close_connections()
+
+    run_async(_list_cities())
+
+
+@app.command()
+def createcity(code_postal: str, name: str):
+    """Create city"""
+
+    async def _create_city():
+        await Tortoise.init(
+            db_url=settings.db_url,
+            modules={"models": ["models.geo"]},
+        )
+        _city = await City.create(code_postal=code_postal, name=name)
+        typer.echo(_city)
+
+        await Tortoise.close_connections()
+
+    run_async(_create_city())
+
+
+@app.command()
+def getcity(code_postal: str):
+    """Get city"""
+
+    async def _get_city():
+        await Tortoise.init(
+            db_url=settings.db_url,
+            modules={"models": ["models.geo"]},
+        )
+        try:
+            _city = await City.get(code_postal=code_postal)
+            table = Table("Code Postal", "Name")
+            table.add_row(_city.code_postal, _city.name)
+            console.print(table)
+
+        except DoesNotExist:
+            typer.echo(f"City with code postal {code_postal} does not exist.")
+
+        await Tortoise.close_connections()
+
+    run_async(_get_city())
+
+
+@app.command()
+def liststreets():
+    """List all streets."""
+
+    async def _list_streets():
+        await Tortoise.init(
+            db_url=settings.db_url,
+            modules={"models": ["models.geo"]},
+        )
+        _streets = await Street.all()
+        table = Table("Code", "Name")
+        for street in _streets:
+            table.add_row(street.code, street.name)
+        console.print(table)
+
+        await Tortoise.close_connections()
+
+    run_async(_list_streets())
+
+
+@app.command()
+def createstreet(code: str, name: str):
+    """Create street"""
+
+    async def _create_street():
+        await Tortoise.init(
+            db_url=settings.db_url,
+            modules={"models": ["models.geo"]},
+        )
+        _street = await Street.create(code=code, name=name)
+        typer.echo(_street)
+
+        await Tortoise.close_connections()
+
+    run_async(_create_street())
+
+
+@app.command()
+def getstreet(code: str):
+    """Get street"""
+
+    async def _get_street():
+        await Tortoise.init(
+            db_url=settings.db_url,
+            modules={"models": ["models.geo"]},
+        )
+        try:
+            _street = await Street.get(id=code).select_related("city")
+            table = Table("Name", "City")
+            table.add_row(_street.name, _street.city.name)
+            console.print(table)
+
+        except DoesNotExist:
+            typer.echo(f"Street with code {code} does not exist.")
+
+        await Tortoise.close_connections()
+
+    run_async(_get_street())
 
 
 if __name__ == "__main__":
