@@ -52,7 +52,4 @@ jobs:
           echo "DATABASE_URL=postgresql://postgres:password@localhost:5432/test_db" >> $GITHUB_ENV
 
       - name: Run tests
-        run: make test
-      
-      - name: Run coverage report
         run: make coverage-no-report
