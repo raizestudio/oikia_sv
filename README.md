@@ -3,12 +3,14 @@
 API for the OIKIA application, which simplifies the discovery of the ideal place to live.
 
 ## Tests
-
-
-## Déploiement
-
 [![API Tests](https://github.com/raizestudio/oikia_sv/actions/workflows/api_tests.yml/badge.svg)](https://github.com/raizestudio/oikia_sv/actions/workflows/api_tests.yml)
 [![codecov](https://codecov.io/gh/raizestudio/oikia_sv/graph/badge.svg?token=K2RMUK0Z48)](https://codecov.io/gh/raizestudio/oikia_sv)
+
+### Coverage grid
+
+<img src="https://codecov.io/gh/raizestudio/oikia_sv/graphs/tree.svg?token=K2RMUK0Z48" alt="Code coverage" width="250"/>
+
+## Déploiement
 
 ## Installation
 
@@ -63,3 +65,22 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Joel P. - [raizetvision@gmail.com](mailto:raizetvision@gmail.com)
 
 Project Link: [https://github.com/raizestudio/heracles](https://github.com/raizestudio/heracles)
+
+# Contributors
+[![Contributors](https://contrib.rocks/image?repo=raizestudio/oikia_sv)](https://contrib.rocks/repo/raizestudio/oikia_sv)
+
+## Acknowledgements
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [Tortoise ORM](https://tortoise-orm.readthedocs.io/en/latest/)
+
+## Data sources
+  ### General
+  - [OpenStreetMap](https://www.openstreetmap.org/)
+  - [OpenDataSoft](https://www.opendatasoft.com/)
+
+  ### France
+  - [data.gouv.fr](https://www.data.gouv.fr/fr/)
+  - [INSEE](https://www.insee.fr/fr/)
+  - [Les rues de france](https://www.lesruesdefrance.com/)
+  - [Geoportail](https://www.geoportail.gouv.fr/)
+  
