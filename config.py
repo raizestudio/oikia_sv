@@ -16,13 +16,13 @@ class Settings(BaseSettings):
     log_file_max_bytes: int = 5 * 1024 * 1024
     log_backup_count: int = 3
     # DB
-    db_user: str = "heracles"
-    db_password: str = "heracles"
+    db_user: str = "oikia"
+    db_password: str = "oikia"
     db_host: str = "localhost"
     db_port: int = 5432
-    db_name: str = "heracles"
+    db_name: str = "oikia"
     db_url: str = f"postgres://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
-    db_test_name: str = "heracles_test"
+    db_test_name: str = "oikia_test"
     db_url_test: str = f"postgres://{db_user}:{db_password}@{db_host}:{db_port}/{db_test_name}"
     # CACHE
     cache_host: str = "localhost"
