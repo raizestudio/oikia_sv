@@ -53,3 +53,6 @@ jobs:
 
       - name: Run tests
         run: make test
+      
+      - name: Run coverage report
+        run: make coverage-no-report

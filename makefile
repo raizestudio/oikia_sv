@@ -9,11 +9,11 @@ test:
 
 # Run tests with coverage
 coverage:
-	pytest --cov=. --cov-report=term-missing --cov-report=html
+	pytest --asyncio-mode=auto --cov=. --cov-report=term-missing --cov-report=html
 
 # Run tests with coverage without report
 coverage-no-report:
-	pytest --cov=. --cov-report=term-missing
+	pytest --asyncio-mode=auto --cov=. --cov-report=term-missing
 	
 # Format code with Black and isort
 format:
