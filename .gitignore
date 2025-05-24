@@ -12,3 +12,7 @@ wheels/
 # Datasets, uploads, and other large files
 data/
 uploads/
+
+# Pytest & coverage
+.coverage
+.coverage.*
