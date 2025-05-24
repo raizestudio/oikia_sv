@@ -7,19 +7,20 @@ API for the OIKIA application, which simplifies the discovery of the ideal place
 
 ## Déploiement
 
-[![Deploy API Demo EC2](https://github.com/raizestudio/heracles/actions/workflows/deploy.yml/badge.svg)](https://github.com/raizestudio/heracles/actions/workflows/deploy.yml)
-![Deploy Client Vercel](https://deploy-badge.vercel.app/vercel/heracles-six)
+[![API Tests](https://github.com/raizestudio/oikia_sv/actions/workflows/api_tests.yml/badge.svg)](https://github.com/raizestudio/oikia_sv/actions/workflows/api_tests.yml)
 
 ## Installation
+
+# TODO:
 
 ### Backend
 
 ```bash
 # Clone the repository
-git clone https://github.com/raizestudio/heracles.git
+git clone https://github.com/raizestudio/oikia_sv.git
 
 # Navigate to the project directory
-cd heracles
+cd oikia_sv
 
 # Create venv
 python3.13 -m venv venv
@@ -28,7 +29,10 @@ python3.13 -m venv venv
 source venv/bin/activate
 
 # Install requirements
-pip install -r requirements.txt
+uv pip install -r pyproject.toml
+
+# or simply 
+make init
 
 # Create .env file
 touch .env
@@ -38,20 +42,8 @@ cp .env.example .env
 
 # Start API
 uvicorn main:app --reload
-```
 
-### Frontend
-
-```bash
-# Navigate to the frontend directory
-cd frontend
-
-# Install dependencies
-npm i --force
-
-# Start App
-npm run dev
-```
+```	
 
 ## Contributing
 
