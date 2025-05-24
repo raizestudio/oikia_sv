@@ -8,6 +8,7 @@ API for the OIKIA application, which simplifies the discovery of the ideal place
 ## Déploiement
 
 [![API Tests](https://github.com/raizestudio/oikia_sv/actions/workflows/api_tests.yml/badge.svg)](https://github.com/raizestudio/oikia_sv/actions/workflows/api_tests.yml)
+[![codecov](https://codecov.io/gh/raizestudio/oikia_sv/graph/badge.svg?token=K2RMUK0Z48)](https://codecov.io/gh/raizestudio/oikia_sv)
 
 ## Installation
 
