@@ -41,7 +41,7 @@ class UserQuerySet(QuerySet):
 class User(Model):
     """Model for users."""
 
-    id = fields.UUIDField(pk=True)
+    id = fields.UUIDField(primary_key=True)
     username = fields.CharField(max_length=50, unique=True)
     password = fields.CharField(max_length=128)
     first_name = fields.CharField(max_length=50)
@@ -60,7 +60,7 @@ class User(Model):
 
     is_admin = fields.BooleanField(default=False)
     is_superuser = fields.BooleanField(default=False)
-    
+
     all_objects = UserManager()
 
     class Meta:
@@ -73,7 +73,7 @@ class User(Model):
 class UserPreferences(Model):
     """Model for user preferences."""
 
-    id = fields.IntField(pk=True)
+    id = fields.IntField(primary_key=True)
     language = fields.ForeignKeyField("models.Language", related_name="user_language", null=True)
     currency = fields.ForeignKeyField("models.Currency", related_name="user_currency", null=True)
     timezone = fields.CharField(max_length=50, null=True)
@@ -87,7 +87,7 @@ class UserPreferences(Model):
 class UserSecurity(Model):
     """Model for user security."""
 
-    id = fields.IntField(pk=True)
+    id = fields.IntField(primary_key=True)
     is_mail_verified = fields.BooleanField(default=False)
     is_phone_verified = fields.BooleanField(default=False)
     anti_phishing_code = fields.CharField(max_length=50, null=True)
@@ -101,7 +101,7 @@ class UserSecurity(Model):
 class Profile(Model):
     """Model for user profile."""
 
-    id = fields.IntField(pk=True)
+    id = fields.IntField(primary_key=True)
     bio = fields.TextField(null=True)
     location = fields.CharField(max_length=100, null=True)
     birth_date = fields.DateField(null=True)

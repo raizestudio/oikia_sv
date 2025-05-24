@@ -38,7 +38,7 @@ class TokenQuerySet(QuerySet):
 class Token(Model):
     """Model for tokens."""
 
-    token = fields.CharField(max_length=255, pk=True)
+    token = fields.CharField(max_length=255, primary_key=True)
     created_at = fields.DatetimeField(auto_now_add=True)
 
     user = fields.ForeignKeyField("models.User", related_name="tokens")
@@ -50,7 +50,7 @@ class Token(Model):
 class TokenBlacklist(Model):
     """Model for blacklisted tokens."""
 
-    token = fields.CharField(max_length=255, pk=True)
+    token = fields.CharField(max_length=255, primary_key=True)
     created_at = fields.DatetimeField(auto_now_add=True)
 
     def __str__(self):
@@ -60,7 +60,7 @@ class TokenBlacklist(Model):
 class Refresh(Model):
     """Model for refresh tokens"""
 
-    token = fields.CharField(max_length=255, pk=True)
+    token = fields.CharField(max_length=255, primary_key=True)
     created_at = fields.DatetimeField(auto_now_add=True)
     expire_at = fields.DatetimeField(default=default_expire_at)
 
@@ -80,7 +80,7 @@ class Refresh(Model):
 class ApiKey(Model):
     """Model for API keys"""
 
-    key = fields.CharField(pk=True, max_length=255)
+    key = fields.CharField(primary_key=True, max_length=255)
     created_at = fields.DatetimeField(auto_now_add=True)
     updated_at = fields.DatetimeField(auto_now=True)
 
@@ -93,7 +93,7 @@ class ApiKey(Model):
 class Session(Model):
     """Model for sessions"""
 
-    id = fields.UUIDField(pk=True)
+    id = fields.UUIDField(primary_key=True)
     ip_v4 = fields.CharField(max_length=15, null=True)
     ip_v6 = fields.CharField(max_length=64, null=True)
     ip_type = fields.CharEnumField(IPTypeEnum, default=IPTypeEnum.UNKNOWN)
@@ -115,7 +115,7 @@ class Session(Model):
 class Permission(Model):
     """Model for permissions"""
 
-    id = fields.IntField(pk=True)
+    id = fields.IntField(primary_key=True)
     name = fields.CharField(max_length=255)
 
     def __str__(self):

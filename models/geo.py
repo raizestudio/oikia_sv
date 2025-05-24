@@ -33,7 +33,7 @@ class AnalyticsMixin:
 class Language(Model):
     """Model for languages."""
 
-    code = fields.CharField(pk=True, max_length=4, unique=True)
+    code = fields.CharField(primary_key=True, max_length=4, unique=True)
     name = fields.CharField(max_length=50, unique=True)
 
     def __str__(self):
@@ -43,7 +43,7 @@ class Language(Model):
 class Currency(Model):
     """Model for currencies."""
 
-    code = fields.CharField(pk=True, max_length=3, unique=True)
+    code = fields.CharField(primary_key=True, max_length=3, unique=True)
     code_numeric = fields.CharField(max_length=3, unique=True)
     name = fields.CharField(max_length=50, unique=True)
     symbol = fields.CharField(max_length=5, null=True)
@@ -56,7 +56,7 @@ class Currency(Model):
 class CallingCode(Model):
     """Model for phone calling codes."""
 
-    code = fields.CharField(pk=True, max_length=5, unique=True)
+    code = fields.CharField(primary_key=True, max_length=5, unique=True)
 
     country = fields.ForeignKeyField("models.Country", related_name="country_calling_code")
 
@@ -78,7 +78,7 @@ class PhoneNumber(Model):
 class TopLevelDomain(Model):
     """Model for top-level domains."""
 
-    code = fields.CharField(pk=True, max_length=5, unique=True)
+    code = fields.CharField(primary_key=True, max_length=5, unique=True)
     operator = fields.CharField(max_length=50, null=True)
     idn = fields.BooleanField(default=False)
     dnssec = fields.BooleanField(default=False)
@@ -94,7 +94,7 @@ class TopLevelDomain(Model):
 class Email(Model):
     """Model for emails."""
 
-    email = fields.CharField(pk=True, max_length=255, unique=True)
+    email = fields.CharField(primary_key=True, max_length=255, unique=True)
 
     def __str__(self):
         return self.email
@@ -103,7 +103,7 @@ class Email(Model):
 class Continent(Model):
     """Model for continents."""
 
-    code = fields.CharField(pk=True, max_length=2, unique=True)
+    code = fields.CharField(primary_key=True, max_length=2, unique=True)
     name = fields.CharField(max_length=50, unique=True)
 
     def __str__(self):
@@ -113,7 +113,7 @@ class Continent(Model):
 class Country(Model):
     """Model for countries."""
 
-    code_iso2 = fields.CharField(pk=True, max_length=2, unique=True)
+    code_iso2 = fields.CharField(primary_key=True, max_length=2, unique=True)
     code_iso3 = fields.CharField(max_length=3, unique=True)
     onu_code = fields.CharField(max_length=3, unique=True)
     name = fields.CharField(max_length=100, unique=True)
@@ -164,7 +164,7 @@ class CountryData(Model):
 class AdministrativeLevelOne(Model):
     """Model for administrative level one."""
 
-    code = fields.CharField(pk=True, max_length=8, unique=True)
+    code = fields.CharField(primary_key=True, max_length=8, unique=True)
     name = fields.CharField(max_length=50, unique=True)
     code_insee = fields.CharField(max_length=10, null=True)  # INSEE code for France, might be null or different entity for other countries
 
@@ -177,7 +177,7 @@ class AdministrativeLevelOne(Model):
 class AdministrativeLevelTwo(Model):
     """Model for administrative level two."""
 
-    code = fields.CharField(pk=True, max_length=8, unique=True)
+    code = fields.CharField(primary_key=True, max_length=8, unique=True)
     numeric_code = fields.IntField(null=True)
     name = fields.CharField(max_length=50, unique=True)
 
@@ -192,7 +192,7 @@ class AdministrativeLevelTwo(Model):
     # class CityType(Model):
     # """Model for city types."""
 
-    # code = fields.CharField(pk=True, max_length=10)
+    # code = fields.CharField(primary_key=True, max_length=10)
     # name = fields.CharField(max_length=32)
     # description = fields.TextField(null=True)
     # population_min = fields.IntField(null=True)
@@ -244,7 +244,7 @@ class CityData(AnalyticsMixin, Model):
 
 class StreetType(Model):
 
-    code = fields.CharField(pk=True, max_length=10, unique=True)
+    code = fields.CharField(primary_key=True, max_length=10, unique=True)
     name = fields.CharField(max_length=50)
     short_name = fields.CharField(max_length=10, null=True)
 

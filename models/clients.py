@@ -7,7 +7,7 @@ from tortoise.queryset import QuerySet
 class Client(Model):
     """Model for clients"""
 
-    id = fields.UUIDField(pk=True)
+    id = fields.UUIDField(primary_key=True)
     name = fields.CharField(max_length=255)
 
     def __str__(self):

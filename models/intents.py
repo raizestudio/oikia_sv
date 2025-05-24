@@ -9,7 +9,7 @@ from tortoise.queryset import QuerySet
 class Intent(Model):
     """Model for intents."""
 
-    id = fields.UUIDField(pk=True)
+    id = fields.UUIDField(primary_key=True)
     raw_input = fields.TextField()
     processed = fields.BooleanField(default=False)
 
@@ -20,7 +20,7 @@ class Intent(Model):
 
 
 class IntentAttributes(Model):
-    id = fields.UUIDField(pk=True, default=uuid4)
+    id = fields.UUIDField(primary_key=True, default=uuid4)
     climate = fields.CharField(max_length=100, null=True)
     population_density = fields.CharField(max_length=100, null=True)
     proximity = fields.CharField(max_length=100, null=True)
@@ -35,10 +35,10 @@ class IntentAttributes(Model):
 
 
 class Recommendation(Model):
-    id = fields.UUIDField(pk=True, default=uuid4)
+    id = fields.UUIDField(primary_key=True, default=uuid4)
     score = fields.FloatField()
     reason = fields.TextField(null=True)
-    
+
     created_at = fields.DatetimeField(auto_now_add=True)
 
     intent = fields.ForeignKeyField("models.Intent", related_name="recommendations")

@@ -7,7 +7,7 @@ from tortoise.queryset import QuerySet
 class Menu(Model):
     """Model for menus"""
 
-    id = fields.IntField(pk=True)
+    id = fields.IntField(primary_key=True)
     name = fields.CharField(max_length=255)
     parent = fields.IntField(null=True)
 
@@ -18,7 +18,7 @@ class Menu(Model):
 class Category(Model):
     """Model for categories"""
 
-    id = fields.IntField(pk=True)
+    id = fields.IntField(primary_key=True)
     name = fields.CharField(max_length=255)
     description = fields.TextField(null=True)
 
@@ -32,7 +32,7 @@ class Category(Model):
 class Tag(Model):
     """Model for tags"""
 
-    id = fields.IntField(pk=True)
+    id = fields.IntField(primary_key=True)
     name = fields.CharField(max_length=255)
 
     class Meta:

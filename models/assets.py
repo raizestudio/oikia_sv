@@ -7,7 +7,7 @@ from tortoise.queryset import QuerySet
 class AssetType(Model):
     """Model for asset types."""
 
-    code = fields.CharField(pk=True, max_length=50, unique=True)
+    code = fields.CharField(primary_key=True, max_length=50, unique=True)
     name = fields.CharField(max_length=255)
 
     def __str__(self):
@@ -17,7 +17,7 @@ class AssetType(Model):
 class AssetPhotos(Model):
     """Model for asset photos."""
 
-    id = fields.UUIDField(pk=True)
+    id = fields.UUIDField(primary_key=True)
     image = fields.CharField(max_length=255)
     is_cover = fields.BooleanField(default=False)
     created_at = fields.DatetimeField(auto_now_add=True)
@@ -37,7 +37,7 @@ class AssetQuerySet(QuerySet):
 class Asset(Model):
     """Model for assets."""
 
-    id = fields.UUIDField(pk=True)
+    id = fields.UUIDField(primary_key=True)
     area = fields.FloatField()
     total_rooms = fields.IntField()
     latitude = fields.CharField(max_length=50)
@@ -56,7 +56,7 @@ class Asset(Model):
 class AssetTransactionType(Model):
     """Model for asset transaction types."""
 
-    code = fields.CharField(pk=True, max_length=50, unique=True)
+    code = fields.CharField(primary_key=True, max_length=50, unique=True)
     name = fields.CharField(max_length=255)
 
     def __str__(self):
@@ -66,7 +66,7 @@ class AssetTransactionType(Model):
 class AssetTransaction(Model):
     """Model for asset transaction history."""
 
-    id = fields.UUIDField(pk=True)
+    id = fields.UUIDField(primary_key=True)
     transaction_date = fields.DatetimeField(auto_now_add=True)
     transaction_amount = fields.FloatField()
     created_at = fields.DatetimeField(auto_now_add=True)
