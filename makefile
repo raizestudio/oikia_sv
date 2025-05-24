@@ -25,7 +25,7 @@ lint:
 
 # Install dependencies
 init:
-	uv pip --system install -r pyproject.toml
+	uv pip install --system -r pyproject.toml
 
 # Install dev
 install-dev:
