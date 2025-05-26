@@ -37,6 +37,7 @@ CSVS = [
 ]
 
 FIXTURES = [
+    "core.menu",
     "geo.language",
     "geo.currency",
     "geo.continent",
@@ -58,7 +59,13 @@ FIXTURES = [
 
 
 @app.command()
-def createmenu(name: str):
+def createmenu(
+    name: str,
+    path: str = typer.Option(None, help="URL path for the menu item"),
+    icon: str = typer.Option(None, help="Icon for the menu item"),
+    description: str = typer.Option(None, help="Optional description of the menu"),
+    parent: int = typer.Option(None, help="ID of the parent menu, if any"),
+):
     """Create menu"""
 
     async def _create_menu():
@@ -66,8 +73,13 @@ def createmenu(name: str):
             db_url=settings.db_url,
             modules={"models": ["models.core"]},
         )
-        _menu = await Menu.create(name=name)
-        typer.echo(_menu)
+        _parent = await Menu.get_or_none(id=parent) if parent else None
+        if parent and not _parent:
+            r_print(f"[bold red]Parent menu[/bold red] [italic white]{parent}[/italic white] [bold red]does not exist![/bold red] :boom:")
+            raise typer.Exit(code=1)
+
+        _menu = await Menu.create(name=name, path=path, icon=icon, description=description, parent=_parent)
+        console.print(f"[bold green]Menu[/bold green] [italic white]{_menu.name}[/italic white] [bold green]created successfully![/bold green] :tada:")
 
         await Tortoise.close_connections()
 

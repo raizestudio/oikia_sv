@@ -1,46 +1,60 @@
 from typing import Dict, List, Optional
 
-from fastapi import APIRouter, Depends, File, HTTPException, Request, UploadFile, status
+from fastapi import (
+    APIRouter,
+    Depends,
+    File,
+    HTTPException,
+    Query,
+    Request,
+    UploadFile,
+    status,
+)
 
 # from tortoise.contrib.fastapi import HTTPNotFoundError
 from tortoise.exceptions import DoesNotExist, IntegrityError
 from tortoise.expressions import Q
 
 from models.users import User
+from schemas.pagination import PaginatedResponse
 from schemas.users import UserCreate, UserRead
 
 router = APIRouter()
 
 
-class RequestFilters:
-    filters: Dict[str, str] = {}
-    order: Optional[str] = None
-    per_page: Optional[int] = None
-    page: Optional[int] = None
-
-
-@router.get("/", response_model=List[UserRead], responses={200: {"description": "List of users"}})
-async def get_users(request: Request):
+@router.get("/", response_model=PaginatedResponse[UserRead], response_model_by_alias=False, responses={200: {"description": "List of users"}})
+async def get_users(page: int = Query(1, ge=1), size: int = Query(10, ge=1)):
     """
     Retrieve a list of users, according to filters provided.
     """
-    filters = dict(request.query_params)
-    if not filters:
-        _users = await User.all().values()
-        for user in _users:
-            user["email"] = user.pop("email_id")
-        return _users
+    count = await User.all().count()
+    offset = (page - 1) * size
 
-    query = Q()
-    for field, value in filters.items():
-        query &= Q(**{field: value})
-
-    _users = await User.filter(query).all().values("id", "username", "email_id", "first_name", "last_name", "is_active", "avatar")
-
-    for user in _users:
-        user["email"] = user.pop("email_id")
-
-    return _users
+    _users = (
+        await User.all()
+        .offset(offset)
+        .limit(size)
+        .values(
+            "id",
+            "username",
+            "email__email",
+            "first_name",
+            "last_name",
+            "avatar",
+            "created_at",
+            "updated_at",
+            "is_active",
+            "is_admin",
+            "is_superuser",
+            "phone_number__phone_number",
+        )
+    )
+    return PaginatedResponse[UserRead](
+        count=count,
+        page=page,
+        size=size,
+        data=_users,
+    )
 
 
 @router.get(

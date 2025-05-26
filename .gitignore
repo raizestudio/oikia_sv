@@ -12,6 +12,7 @@ wheels/
 # Datasets, uploads, and other large files
 data/
 uploads/
+logs/
 
 # Pytest & coverage
 .coverage

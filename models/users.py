@@ -51,15 +51,14 @@ class User(Model):
     # role = fields.CharEnumField(RoleEnum, default=RoleEnum.PATRON)
     created_at = fields.DatetimeField(auto_now_add=True)
     updated_at = fields.DatetimeField(auto_now=True)
+    is_admin = fields.BooleanField(default=False)
+    is_superuser = fields.BooleanField(default=False)
 
     phone_number = fields.ForeignKeyField("models.PhoneNumber", related_name="user_phone_numbers", null=True)
     email = fields.ForeignKeyField("models.Email", related_name="user_emails", null=True)
     # assets = fields.ManyToManyField("models.Asset", related_name="user_assets")
     # service_requests = fields.ManyToManyField("models.ServiceRequest", related_name="user_service_requests")
     permissions = fields.ManyToManyField("models.Permission", related_name="user_permissions")
-
-    is_admin = fields.BooleanField(default=False)
-    is_superuser = fields.BooleanField(default=False)
 
     all_objects = UserManager()
 

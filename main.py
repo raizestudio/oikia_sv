@@ -6,20 +6,21 @@ from contextlib import asynccontextmanager
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pythonjsonlogger import jsonlogger
-
 import signals  # noqa
 from config import Settings
-from routers import auth, core, geo, intents, users
+from routers.v1 import router as v1_router
 from utils.db import Database
 
 settings = Settings()
 logger = logging.getLogger("uvicorn")
 logger_auth = logging.getLogger("auth")
+
+API_PREFIX = f"/api/v{settings.app_api_version}"
 
 for folder in settings.required_dirs:
     os.makedirs(folder, exist_ok=True)
@@ -49,12 +50,9 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title=settings.app_name, version=settings.app_version, lifespan=lifespan)
+api_router = APIRouter()
 
-app.include_router(core.router, tags=["Core"])
-app.include_router(users.router, prefix="/users", tags=["Users"])
-app.include_router(auth.router, prefix="/auth", tags=["Auth"])
-app.include_router(geo.router, prefix="/geo", tags=["Geo"])
-app.include_router(intents.router, prefix="/intents", tags=["Intents"])
+app.include_router(v1_router, prefix=API_PREFIX, tags=[f"v{settings.app_api_version}"])  # For current versioning, older ones will be hardcoded ?
 
 app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 
@@ -63,7 +61,7 @@ Database.init(app)
 
 origins = [
     "http://localhost",
-    "http://localhost:3000",
+    "http://localhost:5173",
     f"http://{settings.app_api_host}",
 ]
 

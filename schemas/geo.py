@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Union
 
 from pydantic import BaseModel, Field
 
@@ -49,11 +49,38 @@ class TopLevelDomainCreate(BaseModel):
     country: str = Field(..., description="Country of the top level domain.")
 
 
+class ContinentRead(BaseModel):
+    """Schema for reading a continent."""
+
+    code: str = Field(..., description="Code of the continent.")
+    name: str = Field(..., description="Name of the continent.")
+
+    class Config:
+        from_attributes = True
+
+
 class ContinentCreate(BaseModel):
     """Schema for creating a continent."""
 
     code: str = Field(..., description="Code of the continent.")
     name: str = Field(..., description="Name of the continent.")
+
+
+class CountryRead(BaseModel):
+    """Schema for reading a country."""
+
+    code_iso2: str = Field(..., description="Code iso 2 of the country.")
+    code_iso3: str = Field(..., description="Code iso 3 of the country.")
+    onu_code: int = Field(..., description="ONU code of the country.")
+    name: str = Field(..., description="Name of the country.")
+
+    language_official: str = Field(..., alias="language_official__code", description="Official language of the country.")
+    continent: str = Field(..., alias="continent__code", description="Continent of the country.")
+    currency: str = Field(..., alias="currency__code", description="Currency of the country.")
+
+    class Config:
+        populate_by_name = True
+        from_attributes = True
 
 
 class CountryCreate(BaseModel):
@@ -96,6 +123,22 @@ class CityTypeCreate(BaseModel):
     description: str = Field(None, description="Description of the city type.")
     population_min: int = Field(None, description="Minimum population of the city type.")
     population_max: int = Field(None, description="Maximum population of the city type.")
+
+
+class CityRead(BaseModel):
+    """Schema for reading a city"""
+
+    id: int = Field(..., description="ID of the city.")
+    name: str = Field(..., description="Name of the city.")
+    code_postal: str = Field(..., description="Postal code of the city.")
+    code_insee: str = Field(None, description="INSEE code of the city.")
+
+    administrative_level_one: str | None = Field(None, alias="administrative_level_one__code")
+    administrative_level_two: str | None = Field(None, alias="administrative_level_two__code")
+
+    class Config:
+        populate_by_name = True
+        from_attributes = True
 
 
 class CityCreate(BaseModel):

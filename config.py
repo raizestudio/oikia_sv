@@ -48,6 +48,9 @@ class Settings(BaseSettings):
     ]
 
     required_dirs: List[str] = [
+        "data",
+        "data/csv",
+        "data/json",
         "uploads",
         "uploads/avatars",
         "uploads/documents",

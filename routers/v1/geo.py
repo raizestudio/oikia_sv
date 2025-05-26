@@ -1,4 +1,4 @@
-from typing import Annotated
+from typing import Annotated, List
 
 from fastapi import APIRouter, Query, status
 
@@ -25,9 +25,12 @@ from schemas.geo import (
     AdministrativeLevelTwoCreate,
     CallingCodeCreate,
     CityCreate,
+    CityRead,
     CityTypeCreate,
     ContinentCreate,
+    ContinentRead,
     CountryCreate,
+    CountryRead,
     CurrencyCreate,
     LanguageCreate,
     PhoneNumberCreate,
@@ -35,6 +38,7 @@ from schemas.geo import (
     StreetTypeCreate,
     TopLevelDomainCreate,
 )
+from schemas.pagination import PaginatedResponse
 
 router = APIRouter()
 
@@ -146,10 +150,18 @@ async def create_top_level_domain(top_level_domain: TopLevelDomainCreate):
     return _top_level_domain
 
 
-@router.get("/continents")
-async def get_continents():
-    _continents = await Continent.all()
-    return _continents
+@router.get("/continents", response_model=PaginatedResponse[ContinentRead])
+async def get_continents(page: int = Query(1, ge=1), size: int = Query(10, ge=1)):
+    """Retrieve a list of continents."""
+    count = await Continent.all().count()
+    offset = (page - 1) * size
+    _continents = await Continent.all().offset(offset).limit(size).values("code", "name")
+    return PaginatedResponse[ContinentRead](
+        count=count,
+        page=page,
+        size=size,
+        data=_continents,
+    )
 
 
 @router.post("/continents")
@@ -164,10 +176,32 @@ async def get_continent(continent: str):
     return _continent
 
 
-@router.get("/countries")
-async def get_countries():
-    _countries = await Country.all()
-    return _countries
+@router.get("/countries", response_model=PaginatedResponse[CountryRead], response_model_by_alias=False)
+async def get_countries(page: int = Query(1, ge=1), size: int = Query(10, ge=1)):
+    count = await Country.all().count()
+    offset = (page - 1) * size
+
+    _countries = (
+        await Country.all()
+        .offset(offset)
+        .limit(size)
+        .values(
+            "code_iso2",
+            "code_iso3",
+            "onu_code",
+            "name",
+            "language_official__code",
+            "continent__code",
+            "currency__code",
+        )
+    )
+
+    return PaginatedResponse[CountryRead](
+        count=count,
+        page=page,
+        size=size,
+        data=_countries,
+    )
 
 
 @router.get("/countries/{country}")
@@ -267,10 +301,12 @@ async def create_administrative_level_two(
 #     return _city_type
 
 
-@router.get("/cities")
-async def get_cities():
-    _cities = await City.all()
-    return _cities
+@router.get("/cities", response_model=PaginatedResponse[CityRead], response_model_by_alias=False)
+async def get_cities(page: int = Query(1, ge=1), size: int = Query(10, ge=1)):
+    count = await City.all().count()
+    offset = (page - 1) * size
+    _cities = await City.all().offset(offset).limit(size).values("id", "name", "code_postal", "code_insee", "administrative_level_one__code", "administrative_level_two__code")
+    return PaginatedResponse[CityRead](count=count, page=page, size=size, data=_cities)
 
 
 @router.get("/cities/{city}")
@@ -404,15 +440,15 @@ async def get_geo_data_by_id(geo_data: str):
     return _geo_data
 
 
-@router.post("/geo-data")
-async def create_geo_data(geo_data: GeoData):
-    _geo_data = await GeoData.create(
-        geojson=geo_data.geodata,
-        continent=geo_data.continent,
-        country=geo_data.country,
-        administrative_level_one=geo_data.administrative_level_one,
-        administrative_level_two=geo_data.administrative_level_two,
-        city=geo_data.city,
-        street=geo_data.street,
-    )
-    return _geo_data
+# @router.post("/geo-data")
+# async def create_geo_data(geo_data: "GeoData"):
+#     _geo_data = await GeoData.create(
+#         geojson=geo_data.geodata,
+#         continent=geo_data.continent,
+#         country=geo_data.country,
+#         administrative_level_one=geo_data.administrative_level_one,
+#         administrative_level_two=geo_data.administrative_level_two,
+#         city=geo_data.city,
+#         street=geo_data.street,
+#     )
+#     return _geo_data

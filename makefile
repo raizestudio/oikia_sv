@@ -29,7 +29,7 @@ init:
 
 # Install dev
 install-dev:
-	python cli/cli.py core loaddev $(filter-out $@,$(MAKECMDGOALS))
+	python cli/cli.py core loaddev --flags $(filter-out $@,$(MAKECMDGOALS))
 
 install-fixtures:
 	python cli/cli.py core loadfixtures dev

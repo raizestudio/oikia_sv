@@ -1,0 +1,35 @@
+[
+  {
+    "name": "dashboard",
+    "path": "/dashboard",
+    "icon": "IconGauge"
+  },
+  {
+    "name": "data",
+    "icon": "IconDatabase"
+  },
+  {
+    "name": "users",
+    "path": "/dashboard/data/users",
+    "parent": 2
+  },
+  {
+    "name": "geo",
+    "parent": 2
+  },
+  {
+    "name": "continents",
+    "path": "/dashboard/data/geo/continents",
+    "parent": 4
+  },
+  {
+    "name": "countries",
+    "path": "/dashboard/data/geo/countries",
+    "parent": 4
+  },
+  {
+    "name": "cities",
+    "path": "/dashboard/data/geo/cities",
+    "parent": 4
+  }
+]

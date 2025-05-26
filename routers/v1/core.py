@@ -7,6 +7,7 @@ from fastapi.responses import JSONResponse
 from config import Settings
 from models.clients import Client
 from models.users import User
+from models.core import Menu
 from utils.security import get_current_user_or_client
 
 settings = Settings()
@@ -50,3 +51,13 @@ async def info(request: Request, current_user_or_client: Annotated[User | Client
         response.update({"client": str(current_user_or_client.id)})
 
     return JSONResponse(content=response)
+
+
+@router.get("/menus", responses={200: {"description": "List of menus"}})
+async def get_menu(request: Request):
+    """
+    Get the menu items.
+    """
+    menus = await Menu.all().order_by("id")
+    # logger.info(f"Menu accessed by {str(current_user_or_client.id)} at {request.url}")
+    return menus
