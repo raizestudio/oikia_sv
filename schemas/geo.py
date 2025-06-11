@@ -1,4 +1,4 @@
-from typing import List, Union
+from typing import List, Optional
 
 from pydantic import BaseModel, Field
 
@@ -96,6 +96,19 @@ class CountryCreate(BaseModel):
     currency: str = Field(..., description="Currency of the country.")
 
 
+class AdministrativeLevelOneRead(BaseModel):
+    """Schema for reading an administrative level one."""
+
+    code: str = Field(..., description="Code of the administrative level one.")
+    name: str = Field(..., description="Name of the administrative level one.")
+
+    country: str = Field(..., alias="country__code_iso2", description="Country of the administrative level one.")
+
+    class Config:
+        populate_by_name = True
+        from_attributes = True
+
+
 class AdministrativeLevelOneCreate(BaseModel):
     """Schema for creating an administrative level one."""
 
@@ -103,6 +116,20 @@ class AdministrativeLevelOneCreate(BaseModel):
     name: str = Field(..., description="Name of the administrative level one.")
 
     country: str = Field(..., description="Country of the administrative level one.")
+
+
+class AdministrativeLevelTwoRead(BaseModel):
+    """Schema for reading an administrative level two."""
+
+    code: str = Field(..., description="Code of the administrative level two.")
+    numeric_code: int | None = Field(None, description="Numeric code of the administrative level two.")
+    name: str = Field(..., description="Name of the administrative level two.")
+
+    administrative_level_one: str = Field(..., alias="administrative_level_one__code", description="Administrative level one of the administrative level two.")
+
+    class Config:
+        populate_by_name = True
+        from_attributes = True
 
 
 class AdministrativeLevelTwoCreate(BaseModel):
@@ -161,6 +188,19 @@ class StreetTypeCreate(BaseModel):
     short_name: str = Field(None, description="Short name of the street type.")
 
 
+class StreetRead(BaseModel):
+    """Schema for reading a street."""
+
+    id: int = Field(..., description="ID of the street.")
+    name: str = Field(..., description="Name of the street.")
+    street_type: str = Field(..., alias="street_type__code", description="Type of the street.")
+    city: str = Field(..., alias="city__name", description="City of the street.")
+
+    class Config:
+        populate_by_name = True
+        from_attributes = True
+
+
 class StreetCreate(BaseModel):
     """Schema for creating a street."""
 
@@ -168,6 +208,23 @@ class StreetCreate(BaseModel):
 
     street_type: str = Field(..., description="Type of the street.")
     city: str = Field(..., description="City of the street.")
+
+
+class AddressRead(BaseModel):
+    """Schema for reading an address."""
+
+    id: int = Field(..., description="ID of the address.")
+    number: str = Field(..., description="Number of the address.")
+    number_extension: Optional[str] = Field(None, description="Number extension of the address.")
+    complement: Optional[str] = Field(None, description="Complement of the address.")
+    latitude: Optional[float] = Field(None, description="Latitude of the address.")
+    longitude: Optional[float] = Field(None, description="Longitude of the address.")
+
+    street: str = Field(..., alias="street__name", description="Street of the address.")
+
+    class Config:
+        populate_by_name = True
+        from_attributes = True
 
 
 class AddressCreate(BaseModel):

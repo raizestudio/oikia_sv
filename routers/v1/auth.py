@@ -1,7 +1,7 @@
 import logging
 from typing import Annotated
 
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, Query, Request, status
 from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordRequestForm
 from tortoise.exceptions import DoesNotExist, IntegrityError
@@ -11,7 +11,15 @@ from models.auth import ApiKey, Refresh, Session, Token, TokenBlacklist
 from models.clients import Client
 from models.geo import Email
 from models.users import User
-from schemas.auth import SessionCreateSchema
+from schemas.auth import (
+    AuthenticationTokenSchema,
+    RefreshRead,
+    SessionCreateSchema,
+    SessionRead,
+    TokenAuthenticate,
+    TokenRead,
+)
+from schemas.pagination import PaginatedResponse
 from schemas.users import UserCreate, UserRead
 from utils.crypt import (
     check_password,
@@ -85,21 +93,65 @@ async def authenticate_user(form_data: Annotated[OAuth2PasswordRequestForm, Depe
         logger.warning(f"Authentication attempt for {form_data.username}, user was denied", extra={"user_email": form_data.username, "password": form_data.password})
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Unauthorized")
 
-    _token, created = await Token.get_or_create(user=_user, defaults={"token": generate_token({"email": str(_user.email)})})
-    _refresh, created = await Refresh.get_or_create(user=_user, defaults={"token": generate_refresh_token()})
+    _token, _token_created = await Token.get_or_create(user=_user, defaults={"token": generate_token({"email": str(_user.email)})})
+    _refresh, _refresh_created = await Refresh.get_or_create(user=_user, defaults={"token": generate_refresh_token()})
+    _session, _session_created = await Session.get_or_create(token=_token, refresh=_refresh, defaults={"user": _user})
 
-    if not created:
+    if not _token_created:
         _token_blacklist, tk_created = await TokenBlacklist.get_or_create(token=_token.token)
         await _token.delete()
         await _refresh.delete()
         _token = await Token.create(token=generate_token({"email": str(_user.email)}, 10), user=_user)
         _refresh = await Refresh.create(token=generate_refresh_token(), user=_user)
+        _session, _session_created = await Session.update_or_create(token=_token, refresh=_refresh, defaults={"user": _user})
 
     logger.info(f"User {str(_user.id)} authenticated successfully")
-    return {
-        "token": _token.token,
-        "refresh": _refresh.token,
-    }
+    return {"token": _token.token, "refresh": _refresh.token, "session": _session.id}
+
+
+@router.post(
+    "/authenticate/token", response_model=AuthenticationTokenSchema, response_model_by_alias=False, responses={status.HTTP_401_UNAUTHORIZED: {"description": "Unauthorized"}}
+)
+async def authenticate_token(request: Request, payload: TokenAuthenticate):
+    """
+    Authenticate a user with the provided token.
+    If the token is valid, return the user information.
+
+    Args:
+        token (str): The token to authenticate
+
+    Returns:
+        dict: User information
+    """
+    try:
+        _token = await Token.get(token=payload.token)
+        _user = await User.get(id=_token.user_id).values(
+            "id",
+            "username",
+            "email__email",
+            "first_name",
+            "last_name",
+            "avatar",
+            "created_at",
+            "updated_at",
+            "is_active",
+            "is_admin",
+            "is_superuser",
+            "phone_number__phone_number",
+            "phone_number__calling_code__code",
+        )
+        _refresh = await Refresh.get(user=_user.get("id"))
+
+        avatar = _user.get("avatar")
+        if avatar:
+            _user["avatar"] = str(request.url_for("uploads", path=avatar))
+        else:
+            _user["avatar"] = None
+
+        return AuthenticationTokenSchema(token=_token.token, refresh=_refresh.token, user=UserRead.model_validate(_user))
+
+    except DoesNotExist:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Unauthorized")
 
 
 @router.post("/session", responses={status.HTTP_400_BAD_REQUEST: {"description": "Bad Request"}})
@@ -158,3 +210,50 @@ async def create_api_key():
     token = generate_token({"client_id": str(_client.id)})
     _api_key = await ApiKey.create(key=token, client=_client)
     return {"api_key": _api_key.key}
+
+
+@router.get("/tokens", response_model=PaginatedResponse[TokenRead], response_model_by_alias=False)
+async def get_tokens(page: int = Query(1, ge=1), size: int = Query(10, ge=1)):
+    """Get paginated list of tokens."""
+    count = await Token.all().count()
+    offset = (page - 1) * size
+    _tokens = await Token.all().offset(offset).limit(size).values("token", "created_at", "user__id")
+
+    return PaginatedResponse[TokenRead](
+        count=count,
+        page=page,
+        size=size,
+        data=_tokens,
+    )
+
+
+@router.get("/refreshes", response_model=PaginatedResponse[RefreshRead], response_model_by_alias=False)
+async def get_refresh_tokens(page: int = Query(1, ge=1), size: int = Query(10, ge=1)):
+    """Get paginated list of refresh tokens."""
+    count = await Refresh.all().count()
+    offset = (page - 1) * size
+    _refresh_tokens = await Refresh.all().offset(offset).limit(size).values("token", "created_at", "expire_at", "user__id")
+
+    return PaginatedResponse[RefreshRead](
+        count=count,
+        page=page,
+        size=size,
+        data=_refresh_tokens,
+    )
+
+
+@router.get("/sessions", response_model=PaginatedResponse[SessionRead], response_model_by_alias=False)
+async def get_sessions(page: int = Query(1, ge=1), size: int = Query(10, ge=1)):
+    """Get paginated list of sessions."""
+    count = await Session.all().count()
+    offset = (page - 1) * size
+    _sessions = (
+        await Session.all().offset(offset).limit(size).values("id", "ip_v4", "ip_v6", "ip_type", "ip_class", "isp", "os", "user_agent", "created_at", "updated_at", "user__id")
+    )
+
+    return PaginatedResponse[SessionRead](
+        count=count,
+        page=page,
+        size=size,
+        data=_sessions,
+    )

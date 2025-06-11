@@ -23,7 +23,7 @@ router = APIRouter()
 
 
 @router.get("/", response_model=PaginatedResponse[UserRead], response_model_by_alias=False, responses={200: {"description": "List of users"}})
-async def get_users(page: int = Query(1, ge=1), size: int = Query(10, ge=1)):
+async def get_users(request: Request, page: int = Query(1, ge=1), size: int = Query(10, ge=1)):
     """
     Retrieve a list of users, according to filters provided.
     """
@@ -47,14 +47,32 @@ async def get_users(page: int = Query(1, ge=1), size: int = Query(10, ge=1)):
             "is_admin",
             "is_superuser",
             "phone_number__phone_number",
+            "phone_number__calling_code__code",
         )
     )
+
+    for user in _users:
+        avatar = user.get("avatar")
+        if avatar:
+            user["avatar"] = str(request.url_for("uploads", path=avatar))
+        else:
+            user["avatar"] = None
+
     return PaginatedResponse[UserRead](
         count=count,
         page=page,
         size=size,
         data=_users,
     )
+
+
+@router.get("/count")
+async def get_users_count():
+    """
+    Retrieve the total count of users.
+    """
+    count = await User.all().count()
+    return {"count": count}
 
 
 @router.get(
@@ -155,7 +173,7 @@ async def delete_user(user_id: int):
 
 
 @router.post("/{user_id}/upload-avatar", response_model=dict)
-async def upload_avatar(user_id: int, file: UploadFile = File(...)):
+async def upload_avatar(user_id: str, file: UploadFile = File(...)):
     """
     Endpoint to upload a user's avatar.
     """
@@ -169,8 +187,10 @@ async def upload_avatar(user_id: int, file: UploadFile = File(...)):
         raise HTTPException(status_code=404, detail="User not found.")
 
     # Save the file to a directory
-    file_location = f"uploads/avatars/{user_id}_{file.filename}"
-    with open(file_location, "wb") as f:
+    uploads_folder = "uploads/"
+    file_location = f"avatars/{user_id}_{file.filename}"
+    constructed_file_location = uploads_folder + file_location
+    with open(constructed_file_location, "wb") as f:
         f.write(await file.read())
 
     # Update the user's avatar field

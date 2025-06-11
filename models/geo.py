@@ -262,6 +262,12 @@ class Street(Model):
 
     class Meta:
         unique_together = ("name", "street_type", "city")
+        ordering = ["id"]
+        # ordering = ("city__name", "name", "street_type__code")
+        indexes = [
+            ("name", "street_type", "city"),
+            ("name", "city"),
+        ]
         # indexes = [
         #     ("name", "street_type"),
         #     ("name", "city"),

@@ -21,8 +21,11 @@ from models.geo import (  # CityType,
 )
 from schemas.geo import (
     AddressCreate,
+    AddressRead,
     AdministrativeLevelOneCreate,
+    AdministrativeLevelOneRead,
     AdministrativeLevelTwoCreate,
+    AdministrativeLevelTwoRead,
     CallingCodeCreate,
     CityCreate,
     CityRead,
@@ -35,6 +38,7 @@ from schemas.geo import (
     LanguageCreate,
     PhoneNumberCreate,
     StreetCreate,
+    StreetRead,
     StreetTypeCreate,
     TopLevelDomainCreate,
 )
@@ -227,10 +231,18 @@ async def create_country(country: CountryCreate):
     return _country
 
 
-@router.get("/administrative-levels-one")
-async def get_administrative_levels_one():
-    _administrative_levels_one = await AdministrativeLevelOne.all()
-    return _administrative_levels_one
+@router.get("/administrative-levels-ones", response_model=PaginatedResponse[AdministrativeLevelOneRead], response_model_by_alias=False)
+async def get_administrative_levels_one(page: int = Query(1, ge=1), size: int = Query(10, ge=1)):
+    """Retrieve a list of administrative levels one."""
+    count = await AdministrativeLevelOne.all().count()
+    offset = (page - 1) * size
+    _administrative_levels_one = await AdministrativeLevelOne.all().offset(offset).limit(size).values("code", "name", "country__code_iso2")
+    return PaginatedResponse[AdministrativeLevelOneRead](
+        count=count,
+        page=page,
+        size=size,
+        data=_administrative_levels_one,
+    )
 
 
 @router.get("/administrative-levels-one/{administrative_level_one}")
@@ -252,10 +264,18 @@ async def create_administrative_level_one(
     return _administrative_level_one
 
 
-@router.get("/administrative-levels-two")
-async def get_administrative_levels_two():
-    _administrative_levels_two = await AdministrativeLevelTwo.all()
-    return _administrative_levels_two
+@router.get("/administrative-levels-twos", response_model=PaginatedResponse[AdministrativeLevelTwoRead], response_model_by_alias=False)
+async def get_administrative_levels_two(page: int = Query(1, ge=1), size: int = Query(10, ge=1)):
+    """Retrieve a list of administrative levels two."""
+    count = await AdministrativeLevelTwo.all().count()
+    offset = (page - 1) * size
+    _administrative_levels_two = await AdministrativeLevelTwo.all().offset(offset).limit(size).values("code", "numeric_code", "name", "administrative_level_one__code")
+    return PaginatedResponse[AdministrativeLevelTwoRead](
+        count=count,
+        page=page,
+        size=size,
+        data=_administrative_levels_two,
+    )
 
 
 @router.get("/administrative-levels-two/{administrative_level_two}")
@@ -375,10 +395,19 @@ async def create_street_type(street_type: StreetTypeCreate):
     return _street_type
 
 
-@router.get("/streets")
-async def get_streets():
-    _streets = await Street.all()
-    return _streets
+@router.get("/streets", response_model=PaginatedResponse[StreetRead], response_model_by_alias=False)
+async def get_streets(page: int = Query(1, ge=1), size: int = Query(10, ge=1)):
+    """Retrieve a list of streets."""
+    count = await Street.all().count()
+    offset = (page - 1) * size
+
+    _streets = await Street.all().offset(offset).limit(size).values("id", "name", "street_type__code", "city__name")
+    return PaginatedResponse[StreetRead](
+        count=count,
+        page=page,
+        size=size,
+        data=_streets,
+    )
 
 
 @router.get("/streets/{street}")
@@ -410,10 +439,18 @@ async def search_addresses(address: Annotated[str, Query(...)]):
     return {"message": "searching addresses"}
 
 
-@router.get("/addresses")
-async def get_addresses():
-    _addresses = await Address.all()
-    return _addresses
+@router.get("/addresses", response_model=PaginatedResponse[AddressRead], response_model_by_alias=False)
+async def get_addresses(page: int = Query(1, ge=1), size: int = Query(10, ge=1)):
+    """Retrieve a list of addresses."""
+    count = await Address.all().count()
+    offset = (page - 1) * size
+    _addresses = await Address.all().offset(offset).limit(size).values("id", "number", "number_extension", "complement", "latitude", "longitude", "street__name")
+    return PaginatedResponse[AddressRead](
+        count=count,
+        page=page,
+        size=size,
+        data=_addresses,
+    )
 
 
 @router.get("/addresses/{address}")

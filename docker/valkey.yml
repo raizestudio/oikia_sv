@@ -1,0 +1,16 @@
+services:
+  valkey:
+    image: valkey/valkey:latest
+    container_name: valkey
+    ports:
+      - "6379:6379"
+    environment:
+      - DATABASE_URL=postgres://user:password@db:6379/valkeydb
+      - VALKEY_SECRET_KEY=your_secret_key
+
+volumes:
+  valkey-db-data:
+
+networks:
+  valkey_network:
+    driver: bridge

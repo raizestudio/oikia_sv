@@ -7,6 +7,7 @@ import requests
 import typer
 from bs4 import BeautifulSoup
 from cli_utils import (
+    load_addresses,
     load_cities,
     load_cities_data,
     load_fixture,
@@ -332,6 +333,9 @@ def loaddatasets():
         console.print(f"[blue]Processing:[/blue] streets.")
         await load_streets()
 
+        console.print(f"[blue]Processing:[/blue] addresses.")
+        await load_addresses()
+
         await Tortoise.close_connections()
         console.print("[green]✅ All datasets loaded successfully.[/green]")
 
@@ -366,6 +370,7 @@ def test():
         )
         console.print("[blue]Processing:[/blue] test command.")
 
+        await load_addresses()
         console.print("[bold green]Testing command was successful![/bold green]")
 
     run_async(_test())

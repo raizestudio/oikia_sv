@@ -63,6 +63,7 @@ origins = [
     "http://localhost",
     "http://localhost:5173",
     f"http://{settings.app_api_host}",
+    "https://sweet-eyes-decide.loca.lt"
 ]
 
 app.add_middleware(

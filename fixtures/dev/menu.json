@@ -1,35 +1,100 @@
 [
   {
+    "id": 1,
     "name": "dashboard",
     "path": "/dashboard",
     "icon": "IconGauge"
   },
   {
+    "id": 2,
+    "name": "profile",
+    "path": "/dashboard/profile",
+    "icon": "IconProfile"
+  },
+  {
+    "id": 3,
     "name": "data",
     "icon": "IconDatabase"
   },
   {
+    "id": 4,
     "name": "users",
     "path": "/dashboard/data/users",
-    "parent": 2
+    "parent": 3
   },
   {
+    "id": 5,
     "name": "geo",
-    "parent": 2
+    "parent": 3
   },
   {
+    "id": 6,
     "name": "continents",
     "path": "/dashboard/data/geo/continents",
-    "parent": 4
+    "parent": 5
   },
   {
+    "id": 7,
     "name": "countries",
     "path": "/dashboard/data/geo/countries",
-    "parent": 4
+    "parent": 5
   },
   {
+    "id": 8,
+    "name": "administrative level ones",
+    "path": "/dashboard/data/geo/administrative-level-ones",
+    "parent": 5
+  },
+  {
+    "id": 9,
+    "name": "administrative level twos",
+    "path": "/dashboard/data/geo/administrative-level-twos",
+    "parent": 5
+  },
+  {
+    "id": 10,
     "name": "cities",
     "path": "/dashboard/data/geo/cities",
-    "parent": 4
+    "parent": 5
+  },
+  {
+    "id": 11,
+    "name": "streets",
+    "path": "/dashboard/data/geo/streets",
+    "parent": 5
+  },
+  {
+    "id": 12,
+    "name": "addresses",
+    "path": "/dashboard/data/geo/addresses",
+    "parent": 5
+  },
+  {
+    "id": 13,
+    "name": "auth",
+    "parent": 3
+  },
+  {
+    "id": 14,
+    "name": "tokens",
+    "path": "/dashboard/data/auth/tokens",
+    "parent": 13
+  },
+  {
+    "id": 15,
+    "name": "refreshes",
+    "path": "/dashboard/data/auth/refreshes",
+    "parent": 13
+  },
+  {
+    "id": 16,
+    "name": "sessions",
+    "path": "/dashboard/data/auth/sessions",
+    "parent": 13
+  },
+  {
+    "id": 17,
+    "name": "statistics",
+    "parent": 3
   }
 ]

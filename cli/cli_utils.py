@@ -9,6 +9,7 @@ from tortoise import Tortoise
 from tortoise.exceptions import DoesNotExist
 
 from models.geo import (
+    Address,
     AdministrativeLevelOne,
     AdministrativeLevelTwo,
     City,
@@ -409,6 +410,109 @@ async def load_streets():
     except Exception as e:
         console.print(f"[red]Error during bulk street creation: {e}[/red]")
         console.print("[yellow]Some streets may not have been created. Consider retrying or individual processing for failed items.[/yellow]")
+
+
+async def load_addresses():
+    """Load addresses from CSV files into the database."""
+    # todo Source URL:
+    csv_paths_root = settings.csv_path / "france" / "addresses"
+    all_csv_files = list(csv_paths_root.glob("*.csv.gz"))
+
+    if not all_csv_files:
+        console.print("[yellow]No address CSV files found to process.[/yellow]")
+        return
+
+    # --- 1. Pre-load data ---
+    console.print("[cyan]Loading all streets into memory...[/cyan]")
+    try:
+        all_streets_db = await Street.all()
+        streets_map_by_name = {f"{street.name}": street for street in all_streets_db}
+        console.print(f"[green]Loaded {len(streets_map_by_name)} streets.[/green]")
+    except Exception as e:
+        console.print(f"[red]Error loading streets: {e}. Aborting address loading.[/red]")
+        return
+
+    all_address_objects_to_create = []
+    processed_identifiers = set()  # Avoid adding exact duplicate Address objects to the batch
+    for csv_path in all_csv_files:
+        console.print(f"[cyan]Processing file: {csv_path.name}...[/cyan]")
+        try:
+            df = pd.read_csv(
+                csv_path,
+                sep=";",
+                encoding="utf-8",
+                dtype={"code_postal": str, "code_insee": str},
+                compression="gzip",
+            )
+        except Exception as e:
+            console.print(f"[red]Error reading or parsing CSV {csv_path.name}: {e}[/red]")
+            continue
+
+        # df = df.rename(columns={"code_postal": "code_postal", "code_insee": "insee_code", "voie": "street_name", "numero": "number"})
+
+        required_pandas_cols = ["nom_afnor", "code_postal", "numero"]
+        optional_pandas_cols = ["code_insee", "x", "y"]
+
+        # Ensure essential columns are present
+        missing_cols = [col for col in required_pandas_cols if col not in df.columns]
+        if missing_cols:
+            console.print(f"[red]Skipping {csv_path.name}, missing required columns: {', '.join(missing_cols)}.[/red]")
+            continue
+
+        for row_dict in df.to_dict(orient="records"):
+            street_name = row_dict.get("nom_afnor")
+            code_postal = row_dict.get("code_postal")
+            number = row_dict.get("numero")
+            latitude = row_dict.get("x")
+            longitude = row_dict.get("y")
+
+            if not street_name or pd.isna(street_name):
+                # console.print(f"[yellow]Skipping row due to empty street name in {csv_path.name}.[/yellow]")
+                continue
+            street_name = str(street_name).strip()
+
+            if not code_postal or pd.isna(code_postal):
+                # console.print(f"[yellow]Skipping row due to empty postal code in {csv_path.name}.[/yellow]")
+                continue
+            code_postal = str(code_postal).strip()
+
+            street_identifier = f"{street_name} {row_dict.get('street_type', '')}".strip()
+            street_instance = streets_map_by_name.get(street_identifier)
+
+            if not street_instance:
+                # console.print(f"[yellow]Skipping address '{street_identifier}' (Postal: {postal_code}) due to missing street. File: {csv_path.name}[/yellow]")
+                continue
+
+            address_identifier = (street_instance.id, number, code_postal)
+            if address_identifier in processed_identifiers:
+                continue
+            processed_identifiers.add(address_identifier)
+            address_obj_data = {
+                "street": street_instance,
+                "number": number,
+                "postal_code": code_postal,
+                "latitude": latitude,
+                "longitude": longitude,
+            }
+            if "code_insee" in row_dict and row_dict["code_insee"]:
+                address_obj_data["code_insee"] = row_dict["code_insee"]
+
+            all_address_objects_to_create.append(Address(**address_obj_data))
+
+        if not all_address_objects_to_create:
+            console.print("[yellow]No valid address data collected from CSV files to create.[/yellow]")
+            return
+
+    # --- 2. Bulk create addresses ---
+    console.print(f"[cyan]Attempting to bulk create/update {len(all_address_objects_to_create)} addresses...[/cyan]")
+    try:
+        await Address.bulk_create(all_address_objects_to_create, ignore_conflicts=True)
+        # Note: `ignore_conflicts=True` doesn't usually return which objects were created vs. ignored.
+        console.print(f"[green]Address bulk processing completed. {len(all_address_objects_to_create)} candidates processed.[/green]")
+
+    except Exception as e:
+        console.print(f"[red]Error during bulk address creation: {e}[/red]")
+        console.print("[yellow]Some addresses may not have been created. Consider retrying or individual processing for failed items.[/yellow]")
 
 
 async def read_geojson(file_path: Path) -> dict:

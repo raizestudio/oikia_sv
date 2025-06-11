@@ -1,0 +1,21 @@
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=admin
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    networks:
+      - rabbitmq_network
+
+volumes:
+  rabbitmq-data:
+
+networks:
+  rabbitmq_network:
+    driver: bridge

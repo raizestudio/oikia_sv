@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  spark:
+    image: apache/spark-py
+    container_name: spark
+    working_dir: /tmp  # instead of /opt/spark/work-dir
+    command: /opt/spark/bin/pyspark
+    tty: true
+    stdin_open: true
+    ports:
+      - "4040:4040"
